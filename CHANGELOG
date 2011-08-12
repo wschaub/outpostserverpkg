@@ -1,0 +1,55 @@
+0.4 --
+   * updated sunsaver log utility to the most recent version which includes
+     a cosmetic change and a tool to look for power button presses and
+     shut the system down cleanly.
+   
+   * added initial wiki content with instructions and a wiki tutorial to the 
+     sys1 and sys2 overlays.
+
+   * updated smb.conf and dnsmasq on sys1 overlay to deal with some network
+     browsing issues with samba.
+
+   * added /etc/rc2.d/S99nmbd to force nmbd to start on both sys1 and sys2
+     for some reason upstart can sometimes fail to start nmbd. If this happens
+     there is no possibility to browse the workgroup. I really am starting
+     to hate upstart and ubuntu in general.
+
+   * updated /etc/hosts to have www.main.tznet and www.local.tznet because
+     some browsers are retarded and will try to put www in front of any hostname
+     you give them.
+
+   * added /etc/rc2.d/S99powerbutton to start the powerbutton utility that
+     monitors /dev/input/event0 for power button presses and shuts the 
+     system down.
+
+   
+0.3 --
+  * added /opt/sunsaver/bin/sunsaver (a program that logs the sunsaver modbus 
+    info to a log file) to the sys2 overlay.
+
+  * added /etc/rc2.d/S99sunsaver to start the item listed above to the sys2
+    overlay.
+
+  * added /etc/logrotate.d/sunsaver to make sure /var/log/sunsaver.csv
+    will never fill up the internal SSD.
+
+  * added a /status page that shows DHCP leases and solar system status 
+    (only if a logfile is found)
+  
+  * added a link to /status to index.html on both overlays. 
+
+  * made sure the /etc/ssh directory is included in the overlays
+ 
+  * added vim to the list of packages to install in the README file.
+  
+0.2 -- 
+  * Fixed index.html and dokuwiki accounts and start pages between sys1 and sys2 overlays.
+
+  * Include /etc/php5/cgi/php.ini with a max upload limit of 300MB
+  
+  * Document the samba config problem in maverick that prevents browsing the 
+  workgroup in gnome in the README file and include an smb.conf to put on the
+  clients to fix this problem. 
+
+0.1 -- 
+Initial Revision

@@ -1,0 +1,6 @@
+0.3
+  * added /opt/sunsaver/bin/powerbutton which watches for power
+    button presses and shuts the system down cleanly.
+--
+0.1 - 0.2
+  * mainly just the sunsaver log utility and cosmetic changes.

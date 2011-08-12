@@ -1,0 +1,21 @@
+1307854824	192.168.93.172	C	start		created	
+1307854845	192.168.93.172	E	start			
+1307855690	192.168.93.172	E	start		[foo] 	
+1307855780	192.168.93.172	C	alice_s_usenet_flame		created	
+1308029063	192.168.23.175	E	start			
+1308029114	192.168.23.175	E	start			
+1308682858	192.168.23.215	E	start		removed old dummy content and put in something a tad more reasonable.	
+1308682919	192.168.23.215	C	tutorial:start		created	
+1308683179	192.168.23.215	E	tutorial:start		changed the image links since we are in a different namespace than the old CFNPS article.	
+1308683277	192.168.23.215	E	tutorial:start		removed CFNPS from the document heading. 	
+1308687285	192.168.23.215	C	outpostdocs:start		created	
+1308690379	192.168.23.132	E	outpostdocs:start			
+1308690411	192.168.23.132	E	outpostdocs:start		fixed last link	
+1308692304	192.168.23.132	E	outpostdocs:start		added web server documentation	
+1308693488	192.168.23.132	E	outpostdocs:start			
+1308694188	192.168.23.132	E	outpostdocs:start		[How to use the webserver] 	
+1308694272	192.168.23.132	E	outpostdocs:start		[How to use the system] 	
+1308694906	192.168.23.132	E	outpostdocs:start		added screenshots	
+1308694976	192.168.23.132	E	outpostdocs:start		[connecting to the file server.]  fixed formatting	
+1308695962	192.168.23.132	C	outpostdocs:networkdetails		created	
+1308696361	192.168.23.132	E	outpostdocs:networkdetails		added link to source archives and router config backups	

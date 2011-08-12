@@ -1,0 +1,50 @@
+RAM Registers
+
+adc_vb_f = 13.58 V
+adc_va_f = 38.50 V
+adc_vl_f = 13.48 V
+adc_ic_f = 2.35 A
+adc_il_f = 0.00 A
+T_hs = 51 °C
+T_batt = 52 °C
+T_amb = 52 °C
+T_rts = 25 °C
+charge_state = 6 ABSORPTION
+array_fault = Solar input self-diagnostic faults:
+	No faults
+Vb_f = 13.59 V
+Vb_ref = 13.12 V
+Ahc_r = 9.90 Ah
+Ahc_t = 9.90 Ah
+kWhc = 0.10 kWh
+load_state = 1 LOAD_ON
+load_fault = Load output self-diagnostic faults:
+	No faults
+V_lvd = 11.50 V
+Ahl_r = 0.00 Ah
+Ahl_t = 0.00 Ah
+hourmeter = 1 h
+alarm = Controller self-diagnostic alarms:
+	RTS open
+dip_switch = DIP switch settings:
+	Switch 1 OFF - Battery Type: Sealed or Flooded
+	Switch 2 OFF - LVD = 11.50 V, LVR = 12.60 V
+	Switch 3 ON - Auto-Equalize On
+	Switch 4 ON - MODBUS Protocol
+led_state = 5 ABSORPTION (GREEN BLINK, 1HZ)
+Power_out = 31.78 W
+Sweep_Vmp = 23.73 V
+Sweep_Pmax = 118.42 W
+Sweep_Voc = 39.46 V
+Vb_min_daily = 12.50 V
+Vb_max_daily = 14.31 V
+Ahc_daily = 9.90 Ah
+Ahl_daily = 0.00 Ah
+array_fault_daily = Today's solar input self-diagnostic faults:
+	No faults
+load_fault_daily = Today's load output self-diagnostic faults:
+	No faults
+alarm_daily = Today's controller self-diagnostic alarms:
+	RTS open
+vb_min = 10.62 V
+vb_max = 25.29 V

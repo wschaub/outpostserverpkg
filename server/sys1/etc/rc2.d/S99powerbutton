@@ -1,0 +1,4 @@
+#!/bin/sh
+case $1 in
+start) /opt/sunsaver/bin/powerbutton &;;
+esac

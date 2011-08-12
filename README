@@ -1,0 +1,16 @@
+To set up the .tznet smarttop servers perform the following steps:
+ * install maverick (either headless or full, it doesn't really matter)
+ * set up /etc/network/interfaces to give eth0 a static address (192.168.93.2 gw 192.168.93.1 for main and 192.168.23.2 gw 192.168.23.1 for a remote site)
+ * type aptitude update
+ * type aptitude install dnsmasq lighttpd php5-cgi php5-sqlite samba vim
+ * type lighty-enable-mod fastcgi fastcgi-php
+ * type service lighttpd force-reload
+ * type chown www-data:www-data /var/www
+
+Now we are ready to extract the overlay tarball:
+  * if the machine you are installing is the base station site use sys1-overlay.tgz if it is the solar outpost use sys2-overlay.tgz
+  * if this is the base station site run "gunzip -c sys1-overlay.tgz | ( cd /; tar xvpf -)" otherwise use sys2-overlay.tgz instead.
+
+Fix the clients:
+included in this tarball is an smb.conf file copy it to /etc/samba on all the Smart top and Smart Book computers that will be 
+using the fileserver if you dont they will be unable to browse the windows shares. (This is only needed on Ubuntu Maverick, This seems to be fixed already in natty)

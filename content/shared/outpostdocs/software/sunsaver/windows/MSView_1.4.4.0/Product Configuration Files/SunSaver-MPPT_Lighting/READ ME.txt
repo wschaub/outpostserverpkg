@@ -1,0 +1,14 @@
+
+
+***IMPORTANT:  TO USE LIGHTING CONTROL ON THE SUNSAVER MPPT, THE UNIT MUST BE PROGRAMMED 
+		WITH V09 FIRMWARE OR LATER.
+
+
+
+	The firmware can be updated using the MSLoad utility. Go to the Product Firmware 
+Updates folder (also packaged in this zip file) for the MSLoad program and the proper 
+SunSaver MPPT firmware update
+ 
+
+
+

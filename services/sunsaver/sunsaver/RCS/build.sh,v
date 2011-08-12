@@ -1,0 +1,54 @@
+head	1.2;
+access;
+symbols;
+locks
+	wschaub:1.2; strict;
+comment	@# @;
+
+
+1.2
+date	2011.06.23.07.25.37;	author wschaub;	state Exp;
+branches;
+next	1.1;
+
+1.1
+date	2011.06.18.00.16.21;	author wschaub;	state Exp;
+branches;
+next	;
+
+
+desc
+@simple build script for the sunsaver modbus example source
+@
+
+
+1.2
+log
+@added powerbutton tool to the build list
+@
+text
+@#!/bin/sh
+    if [ ! -d /opt/sunsaver/bin ]
+    then
+        echo "sudo mkdir /opt/sunsaver/bin"
+        sudo mkdir -p /opt/sunsaver/bin
+    fi
+    for i in sunsaver sunsaverEEPROM sunsaverlog powerbutton
+    do
+        echo "cc -g -o $i $i.c -I/opt/sunsaver/include -L/opt/sunsaver/lib -Wl,-rpath=/opt/sunsaver/lib -lmodbus"
+        cc -g -o $i $i.c -I/opt/sunsaver/include -L/opt/sunsaver/lib -Wl,-rpath=/opt/sunsaver/lib -lmodbus
+        echo "sudo cp $i /opt/sunsaver/bin/"
+        sudo cp $i /opt/sunsaver/bin/
+    done
+@
+
+
+1.1
+log
+@Initial revision
+@
+text
+@d7 1
+a7 1
+    for i in sunsaver sunsaverEEPROM sunsaverlog
+@

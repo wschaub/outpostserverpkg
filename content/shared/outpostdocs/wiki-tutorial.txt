@@ -1,0 +1,121 @@
+====== CFNPS Wiki Tutorial. ======
+===== Introduction =====
+A [[wikipedia>wiki]] Is simply a collection of web pages that can be edited and created and searched by the end users
+with a simple click of the "Edit This Page" button.
+
+Once that button is clicked you will see a familiar editor window pop up with the contents of the current page. There will be buttons at the top of the window allowing
+you do do familiar actions like you would inside of Microsoft Word. The difference is that instead of seeing the text change, you will see some wiki markup with symbols that 
+tell the wiki software how to render the finished page. This is known as Wiki Syntax, and you can learn more about it at [[wiki:syntax]]. 
+
+
+I highly recommend the first three videos located in the [[tutorial#tutorials|Tutorials]] section they will show everything I am talking about here
+in the form of a video that takes you step by step through the basic tasks you need to be familiar with.
+
+===== Step By Step Tutorial =====
+==== Editing a Page ====
+**To edit a Page simply click on the "Edit this Page button" Or if you want to edit just a portion of a page just click on the smaller "edit button under the section heading you want to edit.**\\
+{{:editbutton.jpg|}}
+
+**Once the Edit button has been pressed You will see the edit screen which looks like this:**\\
+{{:editscreen.jpg|}}
+
+Simply type in or edit the text that you see in the edit window and use the buttons at the top to put in bold, Italic underline Strike up to 5 different levels of section headings. There are also buttons for links, ordered and unorderd lists
+and insertion of files and images. (just hover the mouse over each button to see what each one does.
+
+You will find out quickly that this is not a what you see is what you get editor. Instead when you click a button it puts in [[wiki:syntax|markup]] that tells the wiki how to render the page. you can reference the [[wiki::syntax]] Page to see what the available options are.
+
+==== Adding links and creating new pages ====
+Adding a link is as simple as clicking the link button or simply putting
+the name of the page you are referencing in-between double brackets like this  <code> [[wiki:syntax]] </code>. That code links to the wiki's syntax page. Another example link could be anything like for example <code> [[tutorial]] </code> which links to this [[tutorial]] Page.
+
+Anything you link to that exists will show up as a green colored link. Anything that does not exist yet shows up in red.
+If the link shows up in red you simply follow the link and when it informs you that page does not yet exist just click on the 
+"create this page" button. and it will bring up the familiar editor screen where you can create the missing page. Once that is done that link will now show up in green indicating that the page has been created. 
+
+=== More about link syntax ===
+There are a few more things you should know about creating links.
+First is that the : is used to specify which [[doku>namespaces|namespace]] you are pointing to. everything after the colon is a document that is //inside// a [[doku>namespaces|namespace]] which is really like a file folder or directory like you would use on your computer for 
+organizing files. you can have a namespace inside of a namespace (just like you can have a folder inside of a folder. 
+
+and you simply reference that with namespace1:namespace2:pagename as the link. (for example summit_manual:appendix:venu approval form)
+
+
+you can also make the visible part of the link different than the name of the page or namespace by placing a | character at the end of the link and then typing what you want the link to appear as. for example I can link back to the start page but have it show up as [[start|Example]] by typing this <code>[[start|Example]]</code>
+
+You can also reference a section heading in a document by using the # character after the link and putting the name of the section heading after the # here is another [[tutorial#tutorials|example]] that points to the Tutorials section of this page <code> [[tutorial#tutorials|example]]</code>
+
+There is one more thing you can do with links but you probably wont use it much. you can link to other wiki sites by
+doing wikiname>wikipage for [[doku>namespaces|example]] to link to the dokuwiki namespaces page you could write this <code> [[doku>namespaces|example]]</code>
+
+or we could link to the wikipedia page about [[wikipedia>wiki]]'s with this  <code>[[wikipedia>wiki]]</code>
+
+All of this information and much more is located on the [[wiki:syntax]] page which should be your primary source of information regarding how to use the wiki along with the other documentation linked at the bottom of this page.
+
+==== Adding Images and files to a page ====
+Adding images is as easy as clicking the "Add Images and other files" icon at the top of the edit window\\
+{{:imageupload.jpg|}}
+
+\\ \\
+Once you have done this the Media Manager window pops up which should look like this \\
+{{:imageuploadbox.jpg|}}
+\\ \\
+
+Simply use the browse button to select the Image or file you want to upload to the wiki and
+then click upload. you will see the file you uploaded appear in the list. 
+
+Now just simply click the image in the list and a an image link will automatically appear in the edit screen.
+
+You can use the preview button at the bottom of the edit screen to see what the picture will look like in the
+page once you click save. 
+
+==== Viewing old revisions ====
+If you want to see what has changed in a document over time, or you want to go back to a previous version for some reason.
+simply click the "Old revisions button" 
+and you will get a screen that looks like this:\\
+{{:oldrevisions.jpg|}}
+\\
+You can click on the green title of the page to see the entire page as it was at that time, or you can click on the sunglasses
+to see the differences between that document and the one above it.
+
+Also you can view the difference between ANY two page versions by clicking the checkbox between any two versions you want to compare and clicking on the see differences button at the bottom.
+
+==== Reverting to a previous version of a page ====
+
+To revert to an old revision simply go to the old revisions page by clicking old revisions. click on the link for the old page
+and then do an edit and save on that page. The system will warn you that you are about to go back to an old version and will give one one last chance to back out.\\
+
+If you later want to go back to the more recent version all is not lost, simply repeat the process with the newer version of the document to bring it back. ALL changes to every page are kept forever. 
+
+==== Subscribing to changes ====
+
+You can get an email sent to you whenever a page is edited that includes a copy of the changes just made.
+simply click on the "Subscribe page Changes" button to make this happen. If you want to unsubscribe later simply go back to the
+page you subscribed to and click the unsubscribe page changes button. 
+\\
+There is another button for subscribing to [[doku>namespaces|namespace]] changes this would give you updates on all documents in a [[doku>namespaces|namespace]] which is a lot like a folder that contains related pages, the summit_manual: namspace is an example. every page created inside the [[summit manual:]] area is in the summit_manual: namespace so if you are inside one of the summit manual pages and click on subscribe to [[doku>namespaces|namespace]] changes you would get updates on ALL [[summit manual:]] changes and page additions no matter which page of the summit manual was being edited or changed.
+
+
+===== Additional Documentation =====
+
+The quickest way to get started is to simply dive in and try to make a wiki page. you will want to study the [[wiki:syntax]] page and have it open in another window while you do so. there is a particular area of the wiki called the [[playground:playground]]
+You can scribble all over the [[playground:playground]] at will without worrying about hurting real documents. 
+
+However since you will need to know basic concepts first before you really get started here's a list of video tutorials that should give you the basic concept plus some links to the offical manual to this software.
+
+==== Tutorials ====
+  * [[http://www.splitbrain.org/blog/2008-10/05-dokuwiki_beginners_screencast_01|DokuWiki Beginners Screencast #1 - Your first page]] by Andreas Gohr (English, subtitles in other languages available) :!:
+  * [[http://www.splitbrain.org/blog/2008-11/10-dokuwiki_beginners_screencast_02|DokuWiki Beginners Screencast #2 - Creating links and pages]] Andreas Gohr (English, subtitles in other languages available) :!:
+  * [[http://courses.web2teach.com/tutorial/what_is_a_wiki|What is a Wiki?]] by EdTech Courses
+  * [[http://courses.web2teach.com/tutorial/dokuwiki_overview|DokuWiki Overview]] by EdTech Courses
+  * [[http://courses.web2teach.com/tutorial/editing_pages|Editing Pages]] by EdTech Courses
+  * [[http://courses.web2teach.com/tutorial/links|Creating Links]] by EdTech Courses :!:
+  * [[http://courses.web2teach.com/tutorial/creating_pages|Creating Pages]] by EdTech Courses :!:
+  * [[http://courses.web2teach.com/tutorial/adding_images|Adding Images]] by EdTech Courses :!:
+  * [[http://courses.web2teach.com/tutorial/adding_files|Adding Files]] by EdTech Courses :!:
+ 
+
+==== Offical Manuals ====
+You can learn everything about the use of this software at the following links:
+  * [[wiki:dokuwiki|DokuWiki Documentation Index]] :!:
+  * [[doku>manual| The DokuWiki Manual]] :!:
+  * [[wiki:syntax|Detailed description of the wiki markup/syntax]] :!:

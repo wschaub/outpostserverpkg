@@ -1,0 +1,66 @@
+EEPROM Registers
+
+Charge Settings (bank 1)
+EV_reg = 14.00 V
+EV_float = 13.70 V
+Et_float = 10800 s
+Et_floatlb = 14400 s
+EV_floatlb_trip = 12.50 V
+EV_float_cancel = 12.30 V
+Et_float_exit_cum = 3600 s
+EV_eq = 0.00 V
+Et_eqcalendar = 0 days
+Et_eq_above = 0 s
+Et_eq_reg = 0 s
+
+Charge Settings (bank 2)
+EV_reg2 = 14.30 V
+EV_float2 = 13.70 V
+Et_float2 = 10800 s
+Et_floatlb2 = 14400 s
+EV_floatlb_trip2 = 12.50 V
+EV_float_cancel2 = 12.30 V
+Et_float_exit_cum2 = 3600 s
+EV_eq2 = 14.50 V
+Et_eqcalendar2 = 28 days
+Et_eq_above2 = 14400 s
+Et_eq_reg2 = 10800 s
+
+Charge Settings (shared)
+EV_tempcomp = 0.03 V
+EV_hvd = 15.30 V
+EV_hvr = 13.80 V
+Evb_ref_lim = 15.00 V
+ETb_max = 80 °C
+ETb_min = -30 °C
+
+Load Settings
+EV_lvd = 11.00 V
+EV_lvr = 12.10 V
+EV_lhvd = 0.00 V
+EV_lhvr = 0.00 V
+ER_icomp = 0.01 ohms
+Et_lvd_warn = 240.00 s
+
+Misc Settings
+EV_soc_y2g = 13.10 V
+EV_soc_g2y = 12.10 V
+EV_soc_y2r0 = 11.70 V
+EV_soc_r2y = 12.60 V
+Emodbus_id = 1
+Emeter_id = 1
+
+PPT Settings
+Eic_lim = 0.00 A
+
+Read only section of EEPROM
+Ehourmeter = 0 h
+EAhl_r = 0.00 Ah
+EAhl_t = 0.00 Ah
+EAhc_r = 0.00 Ah
+EAhc_t = 0.00 Ah
+EkWhc = 0.00 kWh
+EVb_min = 10.62 V
+EVb_max = 25.29 V
+EVa_max = 41.25 V
+Etmr_eqcalendar = 2 days

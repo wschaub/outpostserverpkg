@@ -1,0 +1,1920 @@
+Log Record: 0x8000
+
+hourmeter = 16777215 h
+alarm_daily = Today's controller self-diagnostic alarms:
+	RTS open
+	RTS shorted
+	RTS disconnected
+	Ths open
+	Ths shorted
+	SSMPPT hot
+	Current limit
+	Current offset
+	Undefined
+	Undefined
+	Uncalibrated
+	RTS miswire
+	Undefined
+	Undefined
+	Miswire
+	FET open
+	P12
+	High Va current limit
+	Alarm 19
+	Alarm 20
+	Alarm 21
+	Alarm 22
+	Alarm 23
+	Alarm 24
+Vb_min_daily = 200.00 V
+Vb_max_daily = 200.00 V
+Ahc_daily = 6553.50 Ah
+Ahl_daily = 6553.50 Ah
+array_fault_daily = Today's solar input self-diagnostic faults:
+	Overcurrent
+	FETs shorted
+	Software bug
+	Battery HVD
+	Array HVD
+	EEPROM setting edit (reset required)
+	RTS shorted
+	RTS was valid, now disconnected
+	Local temperature sensor failed
+	Fault 10
+	Fault 11
+	Fault 12
+	Fault 13
+	Fault 14
+	Fault 15
+	Fault 16
+load_fault_daily = Today's load output self-diagnostic faults:
+	External short circuit
+	Overcurrent
+	FETs shorted
+	Software bug
+	HVD
+	Heatsink over-temperature
+	EEPROM setting edit (reset required)
+	Fault 8
+Va_max_daily = 200.00 V
+
+Log Record: 0x8010
+
+hourmeter = 16777215 h
+alarm_daily = Today's controller self-diagnostic alarms:
+	RTS open
+	RTS shorted
+	RTS disconnected
+	Ths open
+	Ths shorted
+	SSMPPT hot
+	Current limit
+	Current offset
+	Undefined
+	Undefined
+	Uncalibrated
+	RTS miswire
+	Undefined
+	Undefined
+	Miswire
+	FET open
+	P12
+	High Va current limit
+	Alarm 19
+	Alarm 20
+	Alarm 21
+	Alarm 22
+	Alarm 23
+	Alarm 24
+Vb_min_daily = 200.00 V
+Vb_max_daily = 200.00 V
+Ahc_daily = 6553.50 Ah
+Ahl_daily = 6553.50 Ah
+array_fault_daily = Today's solar input self-diagnostic faults:
+	Overcurrent
+	FETs shorted
+	Software bug
+	Battery HVD
+	Array HVD
+	EEPROM setting edit (reset required)
+	RTS shorted
+	RTS was valid, now disconnected
+	Local temperature sensor failed
+	Fault 10
+	Fault 11
+	Fault 12
+	Fault 13
+	Fault 14
+	Fault 15
+	Fault 16
+load_fault_daily = Today's load output self-diagnostic faults:
+	External short circuit
+	Overcurrent
+	FETs shorted
+	Software bug
+	HVD
+	Heatsink over-temperature
+	EEPROM setting edit (reset required)
+	Fault 8
+Va_max_daily = 200.00 V
+
+Log Record: 0x8020
+
+hourmeter = 16777215 h
+alarm_daily = Today's controller self-diagnostic alarms:
+	RTS open
+	RTS shorted
+	RTS disconnected
+	Ths open
+	Ths shorted
+	SSMPPT hot
+	Current limit
+	Current offset
+	Undefined
+	Undefined
+	Uncalibrated
+	RTS miswire
+	Undefined
+	Undefined
+	Miswire
+	FET open
+	P12
+	High Va current limit
+	Alarm 19
+	Alarm 20
+	Alarm 21
+	Alarm 22
+	Alarm 23
+	Alarm 24
+Vb_min_daily = 200.00 V
+Vb_max_daily = 200.00 V
+Ahc_daily = 6553.50 Ah
+Ahl_daily = 6553.50 Ah
+array_fault_daily = Today's solar input self-diagnostic faults:
+	Overcurrent
+	FETs shorted
+	Software bug
+	Battery HVD
+	Array HVD
+	EEPROM setting edit (reset required)
+	RTS shorted
+	RTS was valid, now disconnected
+	Local temperature sensor failed
+	Fault 10
+	Fault 11
+	Fault 12
+	Fault 13
+	Fault 14
+	Fault 15
+	Fault 16
+load_fault_daily = Today's load output self-diagnostic faults:
+	External short circuit
+	Overcurrent
+	FETs shorted
+	Software bug
+	HVD
+	Heatsink over-temperature
+	EEPROM setting edit (reset required)
+	Fault 8
+Va_max_daily = 200.00 V
+
+Log Record: 0x8030
+
+hourmeter = 16777215 h
+alarm_daily = Today's controller self-diagnostic alarms:
+	RTS open
+	RTS shorted
+	RTS disconnected
+	Ths open
+	Ths shorted
+	SSMPPT hot
+	Current limit
+	Current offset
+	Undefined
+	Undefined
+	Uncalibrated
+	RTS miswire
+	Undefined
+	Undefined
+	Miswire
+	FET open
+	P12
+	High Va current limit
+	Alarm 19
+	Alarm 20
+	Alarm 21
+	Alarm 22
+	Alarm 23
+	Alarm 24
+Vb_min_daily = 200.00 V
+Vb_max_daily = 200.00 V
+Ahc_daily = 6553.50 Ah
+Ahl_daily = 6553.50 Ah
+array_fault_daily = Today's solar input self-diagnostic faults:
+	Overcurrent
+	FETs shorted
+	Software bug
+	Battery HVD
+	Array HVD
+	EEPROM setting edit (reset required)
+	RTS shorted
+	RTS was valid, now disconnected
+	Local temperature sensor failed
+	Fault 10
+	Fault 11
+	Fault 12
+	Fault 13
+	Fault 14
+	Fault 15
+	Fault 16
+load_fault_daily = Today's load output self-diagnostic faults:
+	External short circuit
+	Overcurrent
+	FETs shorted
+	Software bug
+	HVD
+	Heatsink over-temperature
+	EEPROM setting edit (reset required)
+	Fault 8
+Va_max_daily = 200.00 V
+
+Log Record: 0x8040
+
+hourmeter = 16777215 h
+alarm_daily = Today's controller self-diagnostic alarms:
+	RTS open
+	RTS shorted
+	RTS disconnected
+	Ths open
+	Ths shorted
+	SSMPPT hot
+	Current limit
+	Current offset
+	Undefined
+	Undefined
+	Uncalibrated
+	RTS miswire
+	Undefined
+	Undefined
+	Miswire
+	FET open
+	P12
+	High Va current limit
+	Alarm 19
+	Alarm 20
+	Alarm 21
+	Alarm 22
+	Alarm 23
+	Alarm 24
+Vb_min_daily = 200.00 V
+Vb_max_daily = 200.00 V
+Ahc_daily = 6553.50 Ah
+Ahl_daily = 6553.50 Ah
+array_fault_daily = Today's solar input self-diagnostic faults:
+	Overcurrent
+	FETs shorted
+	Software bug
+	Battery HVD
+	Array HVD
+	EEPROM setting edit (reset required)
+	RTS shorted
+	RTS was valid, now disconnected
+	Local temperature sensor failed
+	Fault 10
+	Fault 11
+	Fault 12
+	Fault 13
+	Fault 14
+	Fault 15
+	Fault 16
+load_fault_daily = Today's load output self-diagnostic faults:
+	External short circuit
+	Overcurrent
+	FETs shorted
+	Software bug
+	HVD
+	Heatsink over-temperature
+	EEPROM setting edit (reset required)
+	Fault 8
+Va_max_daily = 200.00 V
+
+Log Record: 0x8050
+
+hourmeter = 16777215 h
+alarm_daily = Today's controller self-diagnostic alarms:
+	RTS open
+	RTS shorted
+	RTS disconnected
+	Ths open
+	Ths shorted
+	SSMPPT hot
+	Current limit
+	Current offset
+	Undefined
+	Undefined
+	Uncalibrated
+	RTS miswire
+	Undefined
+	Undefined
+	Miswire
+	FET open
+	P12
+	High Va current limit
+	Alarm 19
+	Alarm 20
+	Alarm 21
+	Alarm 22
+	Alarm 23
+	Alarm 24
+Vb_min_daily = 200.00 V
+Vb_max_daily = 200.00 V
+Ahc_daily = 6553.50 Ah
+Ahl_daily = 6553.50 Ah
+array_fault_daily = Today's solar input self-diagnostic faults:
+	Overcurrent
+	FETs shorted
+	Software bug
+	Battery HVD
+	Array HVD
+	EEPROM setting edit (reset required)
+	RTS shorted
+	RTS was valid, now disconnected
+	Local temperature sensor failed
+	Fault 10
+	Fault 11
+	Fault 12
+	Fault 13
+	Fault 14
+	Fault 15
+	Fault 16
+load_fault_daily = Today's load output self-diagnostic faults:
+	External short circuit
+	Overcurrent
+	FETs shorted
+	Software bug
+	HVD
+	Heatsink over-temperature
+	EEPROM setting edit (reset required)
+	Fault 8
+Va_max_daily = 200.00 V
+
+Log Record: 0x8060
+
+hourmeter = 16777215 h
+alarm_daily = Today's controller self-diagnostic alarms:
+	RTS open
+	RTS shorted
+	RTS disconnected
+	Ths open
+	Ths shorted
+	SSMPPT hot
+	Current limit
+	Current offset
+	Undefined
+	Undefined
+	Uncalibrated
+	RTS miswire
+	Undefined
+	Undefined
+	Miswire
+	FET open
+	P12
+	High Va current limit
+	Alarm 19
+	Alarm 20
+	Alarm 21
+	Alarm 22
+	Alarm 23
+	Alarm 24
+Vb_min_daily = 200.00 V
+Vb_max_daily = 200.00 V
+Ahc_daily = 6553.50 Ah
+Ahl_daily = 6553.50 Ah
+array_fault_daily = Today's solar input self-diagnostic faults:
+	Overcurrent
+	FETs shorted
+	Software bug
+	Battery HVD
+	Array HVD
+	EEPROM setting edit (reset required)
+	RTS shorted
+	RTS was valid, now disconnected
+	Local temperature sensor failed
+	Fault 10
+	Fault 11
+	Fault 12
+	Fault 13
+	Fault 14
+	Fault 15
+	Fault 16
+load_fault_daily = Today's load output self-diagnostic faults:
+	External short circuit
+	Overcurrent
+	FETs shorted
+	Software bug
+	HVD
+	Heatsink over-temperature
+	EEPROM setting edit (reset required)
+	Fault 8
+Va_max_daily = 200.00 V
+
+Log Record: 0x8070
+
+hourmeter = 16777215 h
+alarm_daily = Today's controller self-diagnostic alarms:
+	RTS open
+	RTS shorted
+	RTS disconnected
+	Ths open
+	Ths shorted
+	SSMPPT hot
+	Current limit
+	Current offset
+	Undefined
+	Undefined
+	Uncalibrated
+	RTS miswire
+	Undefined
+	Undefined
+	Miswire
+	FET open
+	P12
+	High Va current limit
+	Alarm 19
+	Alarm 20
+	Alarm 21
+	Alarm 22
+	Alarm 23
+	Alarm 24
+Vb_min_daily = 200.00 V
+Vb_max_daily = 200.00 V
+Ahc_daily = 6553.50 Ah
+Ahl_daily = 6553.50 Ah
+array_fault_daily = Today's solar input self-diagnostic faults:
+	Overcurrent
+	FETs shorted
+	Software bug
+	Battery HVD
+	Array HVD
+	EEPROM setting edit (reset required)
+	RTS shorted
+	RTS was valid, now disconnected
+	Local temperature sensor failed
+	Fault 10
+	Fault 11
+	Fault 12
+	Fault 13
+	Fault 14
+	Fault 15
+	Fault 16
+load_fault_daily = Today's load output self-diagnostic faults:
+	External short circuit
+	Overcurrent
+	FETs shorted
+	Software bug
+	HVD
+	Heatsink over-temperature
+	EEPROM setting edit (reset required)
+	Fault 8
+Va_max_daily = 200.00 V
+
+Log Record: 0x8080
+
+hourmeter = 16777215 h
+alarm_daily = Today's controller self-diagnostic alarms:
+	RTS open
+	RTS shorted
+	RTS disconnected
+	Ths open
+	Ths shorted
+	SSMPPT hot
+	Current limit
+	Current offset
+	Undefined
+	Undefined
+	Uncalibrated
+	RTS miswire
+	Undefined
+	Undefined
+	Miswire
+	FET open
+	P12
+	High Va current limit
+	Alarm 19
+	Alarm 20
+	Alarm 21
+	Alarm 22
+	Alarm 23
+	Alarm 24
+Vb_min_daily = 200.00 V
+Vb_max_daily = 200.00 V
+Ahc_daily = 6553.50 Ah
+Ahl_daily = 6553.50 Ah
+array_fault_daily = Today's solar input self-diagnostic faults:
+	Overcurrent
+	FETs shorted
+	Software bug
+	Battery HVD
+	Array HVD
+	EEPROM setting edit (reset required)
+	RTS shorted
+	RTS was valid, now disconnected
+	Local temperature sensor failed
+	Fault 10
+	Fault 11
+	Fault 12
+	Fault 13
+	Fault 14
+	Fault 15
+	Fault 16
+load_fault_daily = Today's load output self-diagnostic faults:
+	External short circuit
+	Overcurrent
+	FETs shorted
+	Software bug
+	HVD
+	Heatsink over-temperature
+	EEPROM setting edit (reset required)
+	Fault 8
+Va_max_daily = 200.00 V
+
+Log Record: 0x8090
+
+hourmeter = 16777215 h
+alarm_daily = Today's controller self-diagnostic alarms:
+	RTS open
+	RTS shorted
+	RTS disconnected
+	Ths open
+	Ths shorted
+	SSMPPT hot
+	Current limit
+	Current offset
+	Undefined
+	Undefined
+	Uncalibrated
+	RTS miswire
+	Undefined
+	Undefined
+	Miswire
+	FET open
+	P12
+	High Va current limit
+	Alarm 19
+	Alarm 20
+	Alarm 21
+	Alarm 22
+	Alarm 23
+	Alarm 24
+Vb_min_daily = 200.00 V
+Vb_max_daily = 200.00 V
+Ahc_daily = 6553.50 Ah
+Ahl_daily = 6553.50 Ah
+array_fault_daily = Today's solar input self-diagnostic faults:
+	Overcurrent
+	FETs shorted
+	Software bug
+	Battery HVD
+	Array HVD
+	EEPROM setting edit (reset required)
+	RTS shorted
+	RTS was valid, now disconnected
+	Local temperature sensor failed
+	Fault 10
+	Fault 11
+	Fault 12
+	Fault 13
+	Fault 14
+	Fault 15
+	Fault 16
+load_fault_daily = Today's load output self-diagnostic faults:
+	External short circuit
+	Overcurrent
+	FETs shorted
+	Software bug
+	HVD
+	Heatsink over-temperature
+	EEPROM setting edit (reset required)
+	Fault 8
+Va_max_daily = 200.00 V
+
+Log Record: 0x80A0
+
+hourmeter = 16777215 h
+alarm_daily = Today's controller self-diagnostic alarms:
+	RTS open
+	RTS shorted
+	RTS disconnected
+	Ths open
+	Ths shorted
+	SSMPPT hot
+	Current limit
+	Current offset
+	Undefined
+	Undefined
+	Uncalibrated
+	RTS miswire
+	Undefined
+	Undefined
+	Miswire
+	FET open
+	P12
+	High Va current limit
+	Alarm 19
+	Alarm 20
+	Alarm 21
+	Alarm 22
+	Alarm 23
+	Alarm 24
+Vb_min_daily = 200.00 V
+Vb_max_daily = 200.00 V
+Ahc_daily = 6553.50 Ah
+Ahl_daily = 6553.50 Ah
+array_fault_daily = Today's solar input self-diagnostic faults:
+	Overcurrent
+	FETs shorted
+	Software bug
+	Battery HVD
+	Array HVD
+	EEPROM setting edit (reset required)
+	RTS shorted
+	RTS was valid, now disconnected
+	Local temperature sensor failed
+	Fault 10
+	Fault 11
+	Fault 12
+	Fault 13
+	Fault 14
+	Fault 15
+	Fault 16
+load_fault_daily = Today's load output self-diagnostic faults:
+	External short circuit
+	Overcurrent
+	FETs shorted
+	Software bug
+	HVD
+	Heatsink over-temperature
+	EEPROM setting edit (reset required)
+	Fault 8
+Va_max_daily = 200.00 V
+
+Log Record: 0x80B0
+
+hourmeter = 16777215 h
+alarm_daily = Today's controller self-diagnostic alarms:
+	RTS open
+	RTS shorted
+	RTS disconnected
+	Ths open
+	Ths shorted
+	SSMPPT hot
+	Current limit
+	Current offset
+	Undefined
+	Undefined
+	Uncalibrated
+	RTS miswire
+	Undefined
+	Undefined
+	Miswire
+	FET open
+	P12
+	High Va current limit
+	Alarm 19
+	Alarm 20
+	Alarm 21
+	Alarm 22
+	Alarm 23
+	Alarm 24
+Vb_min_daily = 200.00 V
+Vb_max_daily = 200.00 V
+Ahc_daily = 6553.50 Ah
+Ahl_daily = 6553.50 Ah
+array_fault_daily = Today's solar input self-diagnostic faults:
+	Overcurrent
+	FETs shorted
+	Software bug
+	Battery HVD
+	Array HVD
+	EEPROM setting edit (reset required)
+	RTS shorted
+	RTS was valid, now disconnected
+	Local temperature sensor failed
+	Fault 10
+	Fault 11
+	Fault 12
+	Fault 13
+	Fault 14
+	Fault 15
+	Fault 16
+load_fault_daily = Today's load output self-diagnostic faults:
+	External short circuit
+	Overcurrent
+	FETs shorted
+	Software bug
+	HVD
+	Heatsink over-temperature
+	EEPROM setting edit (reset required)
+	Fault 8
+Va_max_daily = 200.00 V
+
+Log Record: 0x80C0
+
+hourmeter = 16777215 h
+alarm_daily = Today's controller self-diagnostic alarms:
+	RTS open
+	RTS shorted
+	RTS disconnected
+	Ths open
+	Ths shorted
+	SSMPPT hot
+	Current limit
+	Current offset
+	Undefined
+	Undefined
+	Uncalibrated
+	RTS miswire
+	Undefined
+	Undefined
+	Miswire
+	FET open
+	P12
+	High Va current limit
+	Alarm 19
+	Alarm 20
+	Alarm 21
+	Alarm 22
+	Alarm 23
+	Alarm 24
+Vb_min_daily = 200.00 V
+Vb_max_daily = 200.00 V
+Ahc_daily = 6553.50 Ah
+Ahl_daily = 6553.50 Ah
+array_fault_daily = Today's solar input self-diagnostic faults:
+	Overcurrent
+	FETs shorted
+	Software bug
+	Battery HVD
+	Array HVD
+	EEPROM setting edit (reset required)
+	RTS shorted
+	RTS was valid, now disconnected
+	Local temperature sensor failed
+	Fault 10
+	Fault 11
+	Fault 12
+	Fault 13
+	Fault 14
+	Fault 15
+	Fault 16
+load_fault_daily = Today's load output self-diagnostic faults:
+	External short circuit
+	Overcurrent
+	FETs shorted
+	Software bug
+	HVD
+	Heatsink over-temperature
+	EEPROM setting edit (reset required)
+	Fault 8
+Va_max_daily = 200.00 V
+
+Log Record: 0x80D0
+
+hourmeter = 16777215 h
+alarm_daily = Today's controller self-diagnostic alarms:
+	RTS open
+	RTS shorted
+	RTS disconnected
+	Ths open
+	Ths shorted
+	SSMPPT hot
+	Current limit
+	Current offset
+	Undefined
+	Undefined
+	Uncalibrated
+	RTS miswire
+	Undefined
+	Undefined
+	Miswire
+	FET open
+	P12
+	High Va current limit
+	Alarm 19
+	Alarm 20
+	Alarm 21
+	Alarm 22
+	Alarm 23
+	Alarm 24
+Vb_min_daily = 200.00 V
+Vb_max_daily = 200.00 V
+Ahc_daily = 6553.50 Ah
+Ahl_daily = 6553.50 Ah
+array_fault_daily = Today's solar input self-diagnostic faults:
+	Overcurrent
+	FETs shorted
+	Software bug
+	Battery HVD
+	Array HVD
+	EEPROM setting edit (reset required)
+	RTS shorted
+	RTS was valid, now disconnected
+	Local temperature sensor failed
+	Fault 10
+	Fault 11
+	Fault 12
+	Fault 13
+	Fault 14
+	Fault 15
+	Fault 16
+load_fault_daily = Today's load output self-diagnostic faults:
+	External short circuit
+	Overcurrent
+	FETs shorted
+	Software bug
+	HVD
+	Heatsink over-temperature
+	EEPROM setting edit (reset required)
+	Fault 8
+Va_max_daily = 200.00 V
+
+Log Record: 0x80E0
+
+hourmeter = 16777215 h
+alarm_daily = Today's controller self-diagnostic alarms:
+	RTS open
+	RTS shorted
+	RTS disconnected
+	Ths open
+	Ths shorted
+	SSMPPT hot
+	Current limit
+	Current offset
+	Undefined
+	Undefined
+	Uncalibrated
+	RTS miswire
+	Undefined
+	Undefined
+	Miswire
+	FET open
+	P12
+	High Va current limit
+	Alarm 19
+	Alarm 20
+	Alarm 21
+	Alarm 22
+	Alarm 23
+	Alarm 24
+Vb_min_daily = 200.00 V
+Vb_max_daily = 200.00 V
+Ahc_daily = 6553.50 Ah
+Ahl_daily = 6553.50 Ah
+array_fault_daily = Today's solar input self-diagnostic faults:
+	Overcurrent
+	FETs shorted
+	Software bug
+	Battery HVD
+	Array HVD
+	EEPROM setting edit (reset required)
+	RTS shorted
+	RTS was valid, now disconnected
+	Local temperature sensor failed
+	Fault 10
+	Fault 11
+	Fault 12
+	Fault 13
+	Fault 14
+	Fault 15
+	Fault 16
+load_fault_daily = Today's load output self-diagnostic faults:
+	External short circuit
+	Overcurrent
+	FETs shorted
+	Software bug
+	HVD
+	Heatsink over-temperature
+	EEPROM setting edit (reset required)
+	Fault 8
+Va_max_daily = 200.00 V
+
+Log Record: 0x80F0
+
+hourmeter = 16777215 h
+alarm_daily = Today's controller self-diagnostic alarms:
+	RTS open
+	RTS shorted
+	RTS disconnected
+	Ths open
+	Ths shorted
+	SSMPPT hot
+	Current limit
+	Current offset
+	Undefined
+	Undefined
+	Uncalibrated
+	RTS miswire
+	Undefined
+	Undefined
+	Miswire
+	FET open
+	P12
+	High Va current limit
+	Alarm 19
+	Alarm 20
+	Alarm 21
+	Alarm 22
+	Alarm 23
+	Alarm 24
+Vb_min_daily = 200.00 V
+Vb_max_daily = 200.00 V
+Ahc_daily = 6553.50 Ah
+Ahl_daily = 6553.50 Ah
+array_fault_daily = Today's solar input self-diagnostic faults:
+	Overcurrent
+	FETs shorted
+	Software bug
+	Battery HVD
+	Array HVD
+	EEPROM setting edit (reset required)
+	RTS shorted
+	RTS was valid, now disconnected
+	Local temperature sensor failed
+	Fault 10
+	Fault 11
+	Fault 12
+	Fault 13
+	Fault 14
+	Fault 15
+	Fault 16
+load_fault_daily = Today's load output self-diagnostic faults:
+	External short circuit
+	Overcurrent
+	FETs shorted
+	Software bug
+	HVD
+	Heatsink over-temperature
+	EEPROM setting edit (reset required)
+	Fault 8
+Va_max_daily = 200.00 V
+
+Log Record: 0x8100
+
+hourmeter = 16777215 h
+alarm_daily = Today's controller self-diagnostic alarms:
+	RTS open
+	RTS shorted
+	RTS disconnected
+	Ths open
+	Ths shorted
+	SSMPPT hot
+	Current limit
+	Current offset
+	Undefined
+	Undefined
+	Uncalibrated
+	RTS miswire
+	Undefined
+	Undefined
+	Miswire
+	FET open
+	P12
+	High Va current limit
+	Alarm 19
+	Alarm 20
+	Alarm 21
+	Alarm 22
+	Alarm 23
+	Alarm 24
+Vb_min_daily = 200.00 V
+Vb_max_daily = 200.00 V
+Ahc_daily = 6553.50 Ah
+Ahl_daily = 6553.50 Ah
+array_fault_daily = Today's solar input self-diagnostic faults:
+	Overcurrent
+	FETs shorted
+	Software bug
+	Battery HVD
+	Array HVD
+	EEPROM setting edit (reset required)
+	RTS shorted
+	RTS was valid, now disconnected
+	Local temperature sensor failed
+	Fault 10
+	Fault 11
+	Fault 12
+	Fault 13
+	Fault 14
+	Fault 15
+	Fault 16
+load_fault_daily = Today's load output self-diagnostic faults:
+	External short circuit
+	Overcurrent
+	FETs shorted
+	Software bug
+	HVD
+	Heatsink over-temperature
+	EEPROM setting edit (reset required)
+	Fault 8
+Va_max_daily = 200.00 V
+
+Log Record: 0x8110
+
+hourmeter = 16777215 h
+alarm_daily = Today's controller self-diagnostic alarms:
+	RTS open
+	RTS shorted
+	RTS disconnected
+	Ths open
+	Ths shorted
+	SSMPPT hot
+	Current limit
+	Current offset
+	Undefined
+	Undefined
+	Uncalibrated
+	RTS miswire
+	Undefined
+	Undefined
+	Miswire
+	FET open
+	P12
+	High Va current limit
+	Alarm 19
+	Alarm 20
+	Alarm 21
+	Alarm 22
+	Alarm 23
+	Alarm 24
+Vb_min_daily = 200.00 V
+Vb_max_daily = 200.00 V
+Ahc_daily = 6553.50 Ah
+Ahl_daily = 6553.50 Ah
+array_fault_daily = Today's solar input self-diagnostic faults:
+	Overcurrent
+	FETs shorted
+	Software bug
+	Battery HVD
+	Array HVD
+	EEPROM setting edit (reset required)
+	RTS shorted
+	RTS was valid, now disconnected
+	Local temperature sensor failed
+	Fault 10
+	Fault 11
+	Fault 12
+	Fault 13
+	Fault 14
+	Fault 15
+	Fault 16
+load_fault_daily = Today's load output self-diagnostic faults:
+	External short circuit
+	Overcurrent
+	FETs shorted
+	Software bug
+	HVD
+	Heatsink over-temperature
+	EEPROM setting edit (reset required)
+	Fault 8
+Va_max_daily = 200.00 V
+
+Log Record: 0x8120
+
+hourmeter = 16777215 h
+alarm_daily = Today's controller self-diagnostic alarms:
+	RTS open
+	RTS shorted
+	RTS disconnected
+	Ths open
+	Ths shorted
+	SSMPPT hot
+	Current limit
+	Current offset
+	Undefined
+	Undefined
+	Uncalibrated
+	RTS miswire
+	Undefined
+	Undefined
+	Miswire
+	FET open
+	P12
+	High Va current limit
+	Alarm 19
+	Alarm 20
+	Alarm 21
+	Alarm 22
+	Alarm 23
+	Alarm 24
+Vb_min_daily = 200.00 V
+Vb_max_daily = 200.00 V
+Ahc_daily = 6553.50 Ah
+Ahl_daily = 6553.50 Ah
+array_fault_daily = Today's solar input self-diagnostic faults:
+	Overcurrent
+	FETs shorted
+	Software bug
+	Battery HVD
+	Array HVD
+	EEPROM setting edit (reset required)
+	RTS shorted
+	RTS was valid, now disconnected
+	Local temperature sensor failed
+	Fault 10
+	Fault 11
+	Fault 12
+	Fault 13
+	Fault 14
+	Fault 15
+	Fault 16
+load_fault_daily = Today's load output self-diagnostic faults:
+	External short circuit
+	Overcurrent
+	FETs shorted
+	Software bug
+	HVD
+	Heatsink over-temperature
+	EEPROM setting edit (reset required)
+	Fault 8
+Va_max_daily = 200.00 V
+
+Log Record: 0x8130
+
+hourmeter = 16777215 h
+alarm_daily = Today's controller self-diagnostic alarms:
+	RTS open
+	RTS shorted
+	RTS disconnected
+	Ths open
+	Ths shorted
+	SSMPPT hot
+	Current limit
+	Current offset
+	Undefined
+	Undefined
+	Uncalibrated
+	RTS miswire
+	Undefined
+	Undefined
+	Miswire
+	FET open
+	P12
+	High Va current limit
+	Alarm 19
+	Alarm 20
+	Alarm 21
+	Alarm 22
+	Alarm 23
+	Alarm 24
+Vb_min_daily = 200.00 V
+Vb_max_daily = 200.00 V
+Ahc_daily = 6553.50 Ah
+Ahl_daily = 6553.50 Ah
+array_fault_daily = Today's solar input self-diagnostic faults:
+	Overcurrent
+	FETs shorted
+	Software bug
+	Battery HVD
+	Array HVD
+	EEPROM setting edit (reset required)
+	RTS shorted
+	RTS was valid, now disconnected
+	Local temperature sensor failed
+	Fault 10
+	Fault 11
+	Fault 12
+	Fault 13
+	Fault 14
+	Fault 15
+	Fault 16
+load_fault_daily = Today's load output self-diagnostic faults:
+	External short circuit
+	Overcurrent
+	FETs shorted
+	Software bug
+	HVD
+	Heatsink over-temperature
+	EEPROM setting edit (reset required)
+	Fault 8
+Va_max_daily = 200.00 V
+
+Log Record: 0x8140
+
+hourmeter = 16777215 h
+alarm_daily = Today's controller self-diagnostic alarms:
+	RTS open
+	RTS shorted
+	RTS disconnected
+	Ths open
+	Ths shorted
+	SSMPPT hot
+	Current limit
+	Current offset
+	Undefined
+	Undefined
+	Uncalibrated
+	RTS miswire
+	Undefined
+	Undefined
+	Miswire
+	FET open
+	P12
+	High Va current limit
+	Alarm 19
+	Alarm 20
+	Alarm 21
+	Alarm 22
+	Alarm 23
+	Alarm 24
+Vb_min_daily = 200.00 V
+Vb_max_daily = 200.00 V
+Ahc_daily = 6553.50 Ah
+Ahl_daily = 6553.50 Ah
+array_fault_daily = Today's solar input self-diagnostic faults:
+	Overcurrent
+	FETs shorted
+	Software bug
+	Battery HVD
+	Array HVD
+	EEPROM setting edit (reset required)
+	RTS shorted
+	RTS was valid, now disconnected
+	Local temperature sensor failed
+	Fault 10
+	Fault 11
+	Fault 12
+	Fault 13
+	Fault 14
+	Fault 15
+	Fault 16
+load_fault_daily = Today's load output self-diagnostic faults:
+	External short circuit
+	Overcurrent
+	FETs shorted
+	Software bug
+	HVD
+	Heatsink over-temperature
+	EEPROM setting edit (reset required)
+	Fault 8
+Va_max_daily = 200.00 V
+
+Log Record: 0x8150
+
+hourmeter = 16777215 h
+alarm_daily = Today's controller self-diagnostic alarms:
+	RTS open
+	RTS shorted
+	RTS disconnected
+	Ths open
+	Ths shorted
+	SSMPPT hot
+	Current limit
+	Current offset
+	Undefined
+	Undefined
+	Uncalibrated
+	RTS miswire
+	Undefined
+	Undefined
+	Miswire
+	FET open
+	P12
+	High Va current limit
+	Alarm 19
+	Alarm 20
+	Alarm 21
+	Alarm 22
+	Alarm 23
+	Alarm 24
+Vb_min_daily = 200.00 V
+Vb_max_daily = 200.00 V
+Ahc_daily = 6553.50 Ah
+Ahl_daily = 6553.50 Ah
+array_fault_daily = Today's solar input self-diagnostic faults:
+	Overcurrent
+	FETs shorted
+	Software bug
+	Battery HVD
+	Array HVD
+	EEPROM setting edit (reset required)
+	RTS shorted
+	RTS was valid, now disconnected
+	Local temperature sensor failed
+	Fault 10
+	Fault 11
+	Fault 12
+	Fault 13
+	Fault 14
+	Fault 15
+	Fault 16
+load_fault_daily = Today's load output self-diagnostic faults:
+	External short circuit
+	Overcurrent
+	FETs shorted
+	Software bug
+	HVD
+	Heatsink over-temperature
+	EEPROM setting edit (reset required)
+	Fault 8
+Va_max_daily = 200.00 V
+
+Log Record: 0x8160
+
+hourmeter = 16777215 h
+alarm_daily = Today's controller self-diagnostic alarms:
+	RTS open
+	RTS shorted
+	RTS disconnected
+	Ths open
+	Ths shorted
+	SSMPPT hot
+	Current limit
+	Current offset
+	Undefined
+	Undefined
+	Uncalibrated
+	RTS miswire
+	Undefined
+	Undefined
+	Miswire
+	FET open
+	P12
+	High Va current limit
+	Alarm 19
+	Alarm 20
+	Alarm 21
+	Alarm 22
+	Alarm 23
+	Alarm 24
+Vb_min_daily = 200.00 V
+Vb_max_daily = 200.00 V
+Ahc_daily = 6553.50 Ah
+Ahl_daily = 6553.50 Ah
+array_fault_daily = Today's solar input self-diagnostic faults:
+	Overcurrent
+	FETs shorted
+	Software bug
+	Battery HVD
+	Array HVD
+	EEPROM setting edit (reset required)
+	RTS shorted
+	RTS was valid, now disconnected
+	Local temperature sensor failed
+	Fault 10
+	Fault 11
+	Fault 12
+	Fault 13
+	Fault 14
+	Fault 15
+	Fault 16
+load_fault_daily = Today's load output self-diagnostic faults:
+	External short circuit
+	Overcurrent
+	FETs shorted
+	Software bug
+	HVD
+	Heatsink over-temperature
+	EEPROM setting edit (reset required)
+	Fault 8
+Va_max_daily = 200.00 V
+
+Log Record: 0x8170
+
+hourmeter = 16777215 h
+alarm_daily = Today's controller self-diagnostic alarms:
+	RTS open
+	RTS shorted
+	RTS disconnected
+	Ths open
+	Ths shorted
+	SSMPPT hot
+	Current limit
+	Current offset
+	Undefined
+	Undefined
+	Uncalibrated
+	RTS miswire
+	Undefined
+	Undefined
+	Miswire
+	FET open
+	P12
+	High Va current limit
+	Alarm 19
+	Alarm 20
+	Alarm 21
+	Alarm 22
+	Alarm 23
+	Alarm 24
+Vb_min_daily = 200.00 V
+Vb_max_daily = 200.00 V
+Ahc_daily = 6553.50 Ah
+Ahl_daily = 6553.50 Ah
+array_fault_daily = Today's solar input self-diagnostic faults:
+	Overcurrent
+	FETs shorted
+	Software bug
+	Battery HVD
+	Array HVD
+	EEPROM setting edit (reset required)
+	RTS shorted
+	RTS was valid, now disconnected
+	Local temperature sensor failed
+	Fault 10
+	Fault 11
+	Fault 12
+	Fault 13
+	Fault 14
+	Fault 15
+	Fault 16
+load_fault_daily = Today's load output self-diagnostic faults:
+	External short circuit
+	Overcurrent
+	FETs shorted
+	Software bug
+	HVD
+	Heatsink over-temperature
+	EEPROM setting edit (reset required)
+	Fault 8
+Va_max_daily = 200.00 V
+
+Log Record: 0x8180
+
+hourmeter = 16777215 h
+alarm_daily = Today's controller self-diagnostic alarms:
+	RTS open
+	RTS shorted
+	RTS disconnected
+	Ths open
+	Ths shorted
+	SSMPPT hot
+	Current limit
+	Current offset
+	Undefined
+	Undefined
+	Uncalibrated
+	RTS miswire
+	Undefined
+	Undefined
+	Miswire
+	FET open
+	P12
+	High Va current limit
+	Alarm 19
+	Alarm 20
+	Alarm 21
+	Alarm 22
+	Alarm 23
+	Alarm 24
+Vb_min_daily = 200.00 V
+Vb_max_daily = 200.00 V
+Ahc_daily = 6553.50 Ah
+Ahl_daily = 6553.50 Ah
+array_fault_daily = Today's solar input self-diagnostic faults:
+	Overcurrent
+	FETs shorted
+	Software bug
+	Battery HVD
+	Array HVD
+	EEPROM setting edit (reset required)
+	RTS shorted
+	RTS was valid, now disconnected
+	Local temperature sensor failed
+	Fault 10
+	Fault 11
+	Fault 12
+	Fault 13
+	Fault 14
+	Fault 15
+	Fault 16
+load_fault_daily = Today's load output self-diagnostic faults:
+	External short circuit
+	Overcurrent
+	FETs shorted
+	Software bug
+	HVD
+	Heatsink over-temperature
+	EEPROM setting edit (reset required)
+	Fault 8
+Va_max_daily = 200.00 V
+
+Log Record: 0x8190
+
+hourmeter = 16777215 h
+alarm_daily = Today's controller self-diagnostic alarms:
+	RTS open
+	RTS shorted
+	RTS disconnected
+	Ths open
+	Ths shorted
+	SSMPPT hot
+	Current limit
+	Current offset
+	Undefined
+	Undefined
+	Uncalibrated
+	RTS miswire
+	Undefined
+	Undefined
+	Miswire
+	FET open
+	P12
+	High Va current limit
+	Alarm 19
+	Alarm 20
+	Alarm 21
+	Alarm 22
+	Alarm 23
+	Alarm 24
+Vb_min_daily = 200.00 V
+Vb_max_daily = 200.00 V
+Ahc_daily = 6553.50 Ah
+Ahl_daily = 6553.50 Ah
+array_fault_daily = Today's solar input self-diagnostic faults:
+	Overcurrent
+	FETs shorted
+	Software bug
+	Battery HVD
+	Array HVD
+	EEPROM setting edit (reset required)
+	RTS shorted
+	RTS was valid, now disconnected
+	Local temperature sensor failed
+	Fault 10
+	Fault 11
+	Fault 12
+	Fault 13
+	Fault 14
+	Fault 15
+	Fault 16
+load_fault_daily = Today's load output self-diagnostic faults:
+	External short circuit
+	Overcurrent
+	FETs shorted
+	Software bug
+	HVD
+	Heatsink over-temperature
+	EEPROM setting edit (reset required)
+	Fault 8
+Va_max_daily = 200.00 V
+
+Log Record: 0x81A0
+
+hourmeter = 16777215 h
+alarm_daily = Today's controller self-diagnostic alarms:
+	RTS open
+	RTS shorted
+	RTS disconnected
+	Ths open
+	Ths shorted
+	SSMPPT hot
+	Current limit
+	Current offset
+	Undefined
+	Undefined
+	Uncalibrated
+	RTS miswire
+	Undefined
+	Undefined
+	Miswire
+	FET open
+	P12
+	High Va current limit
+	Alarm 19
+	Alarm 20
+	Alarm 21
+	Alarm 22
+	Alarm 23
+	Alarm 24
+Vb_min_daily = 200.00 V
+Vb_max_daily = 200.00 V
+Ahc_daily = 6553.50 Ah
+Ahl_daily = 6553.50 Ah
+array_fault_daily = Today's solar input self-diagnostic faults:
+	Overcurrent
+	FETs shorted
+	Software bug
+	Battery HVD
+	Array HVD
+	EEPROM setting edit (reset required)
+	RTS shorted
+	RTS was valid, now disconnected
+	Local temperature sensor failed
+	Fault 10
+	Fault 11
+	Fault 12
+	Fault 13
+	Fault 14
+	Fault 15
+	Fault 16
+load_fault_daily = Today's load output self-diagnostic faults:
+	External short circuit
+	Overcurrent
+	FETs shorted
+	Software bug
+	HVD
+	Heatsink over-temperature
+	EEPROM setting edit (reset required)
+	Fault 8
+Va_max_daily = 200.00 V
+
+Log Record: 0x81B0
+
+hourmeter = 16777215 h
+alarm_daily = Today's controller self-diagnostic alarms:
+	RTS open
+	RTS shorted
+	RTS disconnected
+	Ths open
+	Ths shorted
+	SSMPPT hot
+	Current limit
+	Current offset
+	Undefined
+	Undefined
+	Uncalibrated
+	RTS miswire
+	Undefined
+	Undefined
+	Miswire
+	FET open
+	P12
+	High Va current limit
+	Alarm 19
+	Alarm 20
+	Alarm 21
+	Alarm 22
+	Alarm 23
+	Alarm 24
+Vb_min_daily = 200.00 V
+Vb_max_daily = 200.00 V
+Ahc_daily = 6553.50 Ah
+Ahl_daily = 6553.50 Ah
+array_fault_daily = Today's solar input self-diagnostic faults:
+	Overcurrent
+	FETs shorted
+	Software bug
+	Battery HVD
+	Array HVD
+	EEPROM setting edit (reset required)
+	RTS shorted
+	RTS was valid, now disconnected
+	Local temperature sensor failed
+	Fault 10
+	Fault 11
+	Fault 12
+	Fault 13
+	Fault 14
+	Fault 15
+	Fault 16
+load_fault_daily = Today's load output self-diagnostic faults:
+	External short circuit
+	Overcurrent
+	FETs shorted
+	Software bug
+	HVD
+	Heatsink over-temperature
+	EEPROM setting edit (reset required)
+	Fault 8
+Va_max_daily = 200.00 V
+
+Log Record: 0x81C0
+
+hourmeter = 16777215 h
+alarm_daily = Today's controller self-diagnostic alarms:
+	RTS open
+	RTS shorted
+	RTS disconnected
+	Ths open
+	Ths shorted
+	SSMPPT hot
+	Current limit
+	Current offset
+	Undefined
+	Undefined
+	Uncalibrated
+	RTS miswire
+	Undefined
+	Undefined
+	Miswire
+	FET open
+	P12
+	High Va current limit
+	Alarm 19
+	Alarm 20
+	Alarm 21
+	Alarm 22
+	Alarm 23
+	Alarm 24
+Vb_min_daily = 200.00 V
+Vb_max_daily = 200.00 V
+Ahc_daily = 6553.50 Ah
+Ahl_daily = 6553.50 Ah
+array_fault_daily = Today's solar input self-diagnostic faults:
+	Overcurrent
+	FETs shorted
+	Software bug
+	Battery HVD
+	Array HVD
+	EEPROM setting edit (reset required)
+	RTS shorted
+	RTS was valid, now disconnected
+	Local temperature sensor failed
+	Fault 10
+	Fault 11
+	Fault 12
+	Fault 13
+	Fault 14
+	Fault 15
+	Fault 16
+load_fault_daily = Today's load output self-diagnostic faults:
+	External short circuit
+	Overcurrent
+	FETs shorted
+	Software bug
+	HVD
+	Heatsink over-temperature
+	EEPROM setting edit (reset required)
+	Fault 8
+Va_max_daily = 200.00 V
+
+Log Record: 0x81D0
+
+hourmeter = 16777215 h
+alarm_daily = Today's controller self-diagnostic alarms:
+	RTS open
+	RTS shorted
+	RTS disconnected
+	Ths open
+	Ths shorted
+	SSMPPT hot
+	Current limit
+	Current offset
+	Undefined
+	Undefined
+	Uncalibrated
+	RTS miswire
+	Undefined
+	Undefined
+	Miswire
+	FET open
+	P12
+	High Va current limit
+	Alarm 19
+	Alarm 20
+	Alarm 21
+	Alarm 22
+	Alarm 23
+	Alarm 24
+Vb_min_daily = 200.00 V
+Vb_max_daily = 200.00 V
+Ahc_daily = 6553.50 Ah
+Ahl_daily = 6553.50 Ah
+array_fault_daily = Today's solar input self-diagnostic faults:
+	Overcurrent
+	FETs shorted
+	Software bug
+	Battery HVD
+	Array HVD
+	EEPROM setting edit (reset required)
+	RTS shorted
+	RTS was valid, now disconnected
+	Local temperature sensor failed
+	Fault 10
+	Fault 11
+	Fault 12
+	Fault 13
+	Fault 14
+	Fault 15
+	Fault 16
+load_fault_daily = Today's load output self-diagnostic faults:
+	External short circuit
+	Overcurrent
+	FETs shorted
+	Software bug
+	HVD
+	Heatsink over-temperature
+	EEPROM setting edit (reset required)
+	Fault 8
+Va_max_daily = 200.00 V
+
+Log Record: 0x81E0
+
+hourmeter = 16777215 h
+alarm_daily = Today's controller self-diagnostic alarms:
+	RTS open
+	RTS shorted
+	RTS disconnected
+	Ths open
+	Ths shorted
+	SSMPPT hot
+	Current limit
+	Current offset
+	Undefined
+	Undefined
+	Uncalibrated
+	RTS miswire
+	Undefined
+	Undefined
+	Miswire
+	FET open
+	P12
+	High Va current limit
+	Alarm 19
+	Alarm 20
+	Alarm 21
+	Alarm 22
+	Alarm 23
+	Alarm 24
+Vb_min_daily = 200.00 V
+Vb_max_daily = 200.00 V
+Ahc_daily = 6553.50 Ah
+Ahl_daily = 6553.50 Ah
+array_fault_daily = Today's solar input self-diagnostic faults:
+	Overcurrent
+	FETs shorted
+	Software bug
+	Battery HVD
+	Array HVD
+	EEPROM setting edit (reset required)
+	RTS shorted
+	RTS was valid, now disconnected
+	Local temperature sensor failed
+	Fault 10
+	Fault 11
+	Fault 12
+	Fault 13
+	Fault 14
+	Fault 15
+	Fault 16
+load_fault_daily = Today's load output self-diagnostic faults:
+	External short circuit
+	Overcurrent
+	FETs shorted
+	Software bug
+	HVD
+	Heatsink over-temperature
+	EEPROM setting edit (reset required)
+	Fault 8
+Va_max_daily = 200.00 V
+
+Log Record: 0x81F0
+
+hourmeter = 16777215 h
+alarm_daily = Today's controller self-diagnostic alarms:
+	RTS open
+	RTS shorted
+	RTS disconnected
+	Ths open
+	Ths shorted
+	SSMPPT hot
+	Current limit
+	Current offset
+	Undefined
+	Undefined
+	Uncalibrated
+	RTS miswire
+	Undefined
+	Undefined
+	Miswire
+	FET open
+	P12
+	High Va current limit
+	Alarm 19
+	Alarm 20
+	Alarm 21
+	Alarm 22
+	Alarm 23
+	Alarm 24
+Vb_min_daily = 200.00 V
+Vb_max_daily = 200.00 V
+Ahc_daily = 6553.50 Ah
+Ahl_daily = 6553.50 Ah
+array_fault_daily = Today's solar input self-diagnostic faults:
+	Overcurrent
+	FETs shorted
+	Software bug
+	Battery HVD
+	Array HVD
+	EEPROM setting edit (reset required)
+	RTS shorted
+	RTS was valid, now disconnected
+	Local temperature sensor failed
+	Fault 10
+	Fault 11
+	Fault 12
+	Fault 13
+	Fault 14
+	Fault 15
+	Fault 16
+load_fault_daily = Today's load output self-diagnostic faults:
+	External short circuit
+	Overcurrent
+	FETs shorted
+	Software bug
+	HVD
+	Heatsink over-temperature
+	EEPROM setting edit (reset required)
+	Fault 8
+Va_max_daily = 200.00 V
+
