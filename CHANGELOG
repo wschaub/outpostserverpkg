@@ -1,3 +1,17 @@
+0.5 --
+   * imported everything into git and added a proper build system that is capable
+     of doing first time installs and updates.
+
+   * re-oragnized everything so that all files only live in one place for better maintainability.
+
+   * Improved the sunsaver and powerbutton services to be proper daemons with
+     command line options and manpages.
+
+   * Content is now seperate from the rest of the system and is optionally installed.
+
+   * This version can now (optionally) be built as a set of debian packages.
+
+
 0.4 --
    * updated sunsaver log utility to the most recent version which includes
      a cosmetic change and a tool to look for power button presses and

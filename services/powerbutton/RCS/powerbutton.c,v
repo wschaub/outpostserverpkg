@@ -1,0 +1,107 @@
+head	1.3;
+access;
+symbols;
+locks
+	wschaub:1.3; strict;
+comment	@ * @;
+
+
+1.3
+date	2011.06.23.07.35.36;	author wschaub;	state Exp;
+branches;
+next	1.2;
+
+1.2
+date	2011.06.23.07.24.40;	author wschaub;	state Exp;
+branches;
+next	1.1;
+
+1.1
+date	2011.06.23.07.20.28;	author wschaub;	state Exp;
+branches;
+next	;
+
+
+desc
+@simple C program to watch for the power key input event and take action on a headless machine.
+@
+
+
+1.3
+log
+@we now execute /sbin/poweroff on a power button press
+@
+text
+@/* $Id: powerbutton.c,v 1.2 2011/06/23 07:24:40 wschaub Exp wschaub $  */
+/* read /dev/input/event0 forever until the power key is pressed and then initiate a clean poweroff */
+#include <stdio.h>
+#include <sys/time.h>
+#include <linux/input.h>
+/* struct input_event {
+    struct timeval time;
+    unsigned short type;
+    unsigned short code;
+    unsigned int value;
+}; */
+
+int main(int argc, char **argv) {
+
+struct input_event event; //Each read of event0 gives us an input_event struct
+FILE *fp;
+fp = fopen("/dev/input/event0","r"); //XXX! we should check for errors here...
+
+//Loop forever reading events and do something only when the power key is pressed.
+    while(1) 
+    {
+        fread(&event,sizeof(event),1,fp);
+        //printf("type = %d\n",event.type);
+        //printf("code = %d\n",event.code);
+        if(event.type == EV_KEY && event.code == KEY_POWER) {
+            printf("power key pressed\n");
+            system("/sbin/poweroff");
+            return 0;
+        }
+    }
+
+}
+
+/*
+ * $Log: powerbutton.c,v $
+ * Revision 1.2  2011/06/23 07:24:40  wschaub
+ * changed exit to return
+ *
+ * Revision 1.1  2011/06/23 07:20:28  wschaub
+ * Initial revision
+ *
+ */
+@
+
+
+1.2
+log
+@changed exit to return
+@
+text
+@d1 1
+a1 1
+/* $Id: powerbutton.c,v 1.1 2011/06/23 07:20:28 wschaub Exp wschaub $  */
+d27 1
+d36 3
+@
+
+
+1.1
+log
+@Initial revision
+@
+text
+@d1 1
+a1 1
+/* $Id$  */
+d27 1
+a27 1
+            exit(0);
+d34 4
+a37 1
+ * $Log$
+@

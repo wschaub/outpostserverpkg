@@ -1,3 +1,15 @@
+#NEW instructions
+ * clone the git tree or unpack the source tarball.
+ * run ./build.sh to interactively go through the build/install process or
+ use one of the following options to build.sh:
+ firstinstall -- First time install this installs everything including the initial content
+ install -- Installs everything except the initial content.
+ docinstall -- installs only the initial content.
+ tarpkg -- creates a gzipped tar archive containing everything + a standalone install script.
+ debpkg -- runs dpkg-buildpackage to build a set of debain packages. 
+
+
+#OLD instructions
 To set up the .tznet smarttop servers perform the following steps:
  * install maverick (either headless or full, it doesn't really matter)
  * set up /etc/network/interfaces to give eth0 a static address (192.168.93.2 gw 192.168.93.1 for main and 192.168.23.2 gw 192.168.23.1 for a remote site)
