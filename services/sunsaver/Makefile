@@ -26,6 +26,6 @@ sunsaverlog: src/sunsaverlog.c modbus
 	
 install: sunsaver sunsaverEEPROM sunsaverlog
 	cd libmodbus-2.0.4 && $(MAKE) install
-	install -D sunsaver $(SERVICEPREFIX)/bin/sunsaver
-	install -D sunsaverEEPROM $(SERVICEPREFIX)/bin/sunsaverEEPROM
-	install -D sunsaverlog $(SERVICEPREFIX)/bin/sunsaverlog
+	install -D sunsaver $(DESTDIR)$(SERVICEPREFIX)/bin/sunsaver
+	install -D sunsaverEEPROM $(DESTDIR)$(SERVICEPREFIX)/bin/sunsaverEEPROM
+	install -D sunsaverlog $(DESTDIR)$(SERVICEPREFIX)/bin/sunsaverlog
