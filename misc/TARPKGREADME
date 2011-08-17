@@ -1,0 +1,18 @@
+Please read this README file first before attenmtping to install a pre-built tar package:
+
+IMPORTANT!
+You need to set up the base system correctly before installing the package. 
+This means setting up the hostname of the system you want to install this package on
+(this can be anything.tznet except main or local)
+
+Second you will need to set up the system to have the correct IP address:
+for a base station that address is always 192.168.93.2
+for a remote site that address is always 192.168.23.2
+
+Third make sure you have an administrative account called sys that can sudo to root
+
+Once this is done extract the tar package you want to install and cd to the directory that was extracted.
+run ./installpkg.sh install to install the package.
+
+to uninstall the package just run ./installpkg.sh uninstall from inside the same directory. Make sure you keep this extracted directory around 
+if you want to be able to uninstall the package later. 

@@ -62,6 +62,10 @@ do_backup(){
             echo /$i >>backup/files
         fi
     done
+    #Create a dummy file in /tmp and add it to the archive
+    #just to be sure we don't end up with an empty archive
+    touch /tmp/$$.installerdummy
+    echo /tmp/$$.installerdummy >> backup/files
     tar -czvf backup/backup.tgz -T backup/files
     echo Done backing up.
 }
@@ -71,7 +75,39 @@ do_uninstall(){
     if [ -f backup/backup.tgz ]
     then
         echo "Removing files included in package"
-        tar tf image.tar | ( cd /; xargs rm )
+	#First remove non-directories with rm
+	for i in ` tar tf image.tar`
+	do
+		if [ -L /$i -o -S /$i -o  -p /$i -o -b /$i -o -c /$i ]
+		then 
+			echo rm $i
+			rm /$i
+		fi
+
+		if [ -e /$i  ]
+		then
+			if [ ! -d /$i ]
+			then
+				echo rm $i
+				rm /$i
+			fi
+		fi
+		
+	done
+
+	#Now remove remaining directories that are empty
+	for i in ` tar tf image.tar`
+	do
+		if [ -e /$i ]
+		then
+			if [ -d /$i ]
+			then
+				echo rmdir -p $i
+				rmdir -p /$i
+			fi
+		fi
+	done 
+
         echo "Restoring backup archive"
         gunzip -c backup/backup.tgz | (cd /; tar xvpf -)
         if [ -e postrm ]
@@ -109,6 +145,11 @@ do_install(){
             apt-get install `cat DEPS`
         fi
 
+	if [ -e ./debpostinst ]
+	then
+	    ./debpostinst
+	fi
+
         if [ $? -eq 1 ]
         then
             echo Could not install depends. Exiting...
@@ -117,11 +158,21 @@ do_install(){
     fi
     echo Extracting files.
     cat image.tar | (cd /; tar xvpf -) 
-    if [ -e posinst ]
+    if [ -e ./postinst ]
     then
         echo Running postinst script.
         ./postinst
     fi
+
+#If this is a content package invalidate the wiki cache. 
+    if [ -f CONTENT ]
+    then
+	    echo "Invalidating wiki cache"
+	    if [ -f $WWWROOT/wiki/conf/local.php ]
+	    then
+		 touch $WWWROOT/wiki/conf/local.php
+	    fi
+    fi 
 
 
 }

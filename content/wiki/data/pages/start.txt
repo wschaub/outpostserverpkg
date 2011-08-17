@@ -1,4 +1,4 @@
-====== remote1.tznet wiki start page ======
+====== ##HOSTNAME## wiki start page ======
 
 Welcome to your new wiki. A wiki is a special kind of website that allows everyone to edit it's content and collaborate in creating that content.
 Every wiki page can be organized and searched providing easy access to the information you create.

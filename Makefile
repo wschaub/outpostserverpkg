@@ -1,18 +1,23 @@
 #Current version of the outpost server package.
-VERSION=0.5
+export VERSION=0.5
+
 #Current working directory, used by the tarpkg target
-CWD=`pwd`
+export CWD=`pwd`
 
 #Directory prefix to put bundeled service programs
-SERVICEPREFIX=/opt/outpostserver
+export SERVICEPREFIX=/opt/outpostserver
 
 #Location of the web root to install web apps/content into
-WWWROOT=/var/www
+export WWWROOT=/var/www
+
+export WWW_USER=www-data
+
+export WWW_GROUP=www-data
 
 #the type of system we will be installing (must be a name of
 #a directory under server/ but must NOT be "common"
 #this should be basestation or remote currently
-TYPE=basestation
+export TYPE=basestation
 
 #packages that need to be installed before we run the final install steps
 DEPENDS="dnsmasq lighttpd php5-cgi php5-sqlite samba vim"
@@ -28,7 +33,6 @@ installdep:
 	aptitude install $(DEPENDS)
 	lighty-enable-mod fastcgi fastcgi-php
 	service lighttpd force-reload
-	chown www-data:www-data /var/www
 
 services:
 	cd services && $(MAKE) 
@@ -44,33 +48,48 @@ contentinstall: content
 
 install: services server
 	cd services && $(MAKE) install
-#	cd server && $(MAKE) install
+	cd server && $(MAKE) install
 
 #Generate a set of generic tar based packages
 #that should work on any distro.
 tarpkg: clean
+	#prepare package dir
 	mkdir -p tmp/fakeroot
 	mkdir -p tmp/pkg
+	#copy over install script and support files
 	cp misc/installpkg.sh tmp/pkg
+	cp misc/TARPKGREADME tmp/pkg
+	cp misc/debpostinst tmp/pkg
+	cp misc/postinst tmp/pkg
 	echo $(DEPENDS) >tmp/DEPS
 	echo "SERVICEPREFIX=$(SERVICEPREFIX)" >tmp/vars
 	echo "WWWROOT=$(WWWROOT)" >>tmp/vars
 	cat /etc/lsb-release | awk '{print "TARGET_"$$0}' >>tmp/vars
+	#Builld the -bin package for our current type
 	cp tmp/DEPS tmp/vars tmp/pkg
 	$(MAKE) DESTDIR=$(CWD)/tmp/fakeroot/
 	fakeroot $(MAKE) DESTDIR=$(CWD)/tmp/fakeroot/ _tarpkgbin
-	cd tmp && mv pkg outpostserverpkg-$(VERSION)-bin 
-	cd tmp && tar czvf ../outpostserverpkg-$(VERSION)-bin.tgz \
-		outpostserverpkg-$(VERSION)-bin
-	rm -rf tmp/fakeroot
-	mkdir tmp/fakeroot
-	mkdir tmp/pkg
+	cd tmp && mv pkg outpostserverpkg-$(VERSION)-$(TYPE)-bin 
+	cd tmp && tar czvf ../../outpostserverpkg-$(VERSION)-$(TYPE)-bin.tgz \
+		outpostserverpkg-$(VERSION)-$(TYPE)-bin
+
+contenttarpkg: clean
+	#Build the content package
+	#prepare package dir
+	mkdir -p tmp/fakeroot
+	mkdir -p tmp/pkg
+	#copy over install script and support files
 	cp misc/installpkg.sh tmp/pkg
+	cp misc/postinst tmp/pkg
+	cp misc/TARPKGREADME tmp/pkg/README
+	echo "SERVICEPREFIX=$(SERVICEPREFIX)" >tmp/vars
+	echo "WWWROOT=$(WWWROOT)" >>tmp/vars
+	cat /etc/lsb-release | awk '{print "TARGET_"$$0}' >>tmp/vars
 	cp tmp/vars tmp/pkg
 	touch tmp/pkg/CONTENT
 	fakeroot $(MAKE) DESTDIR=$(CWD)/tmp/fakeroot _tarpkgcontent
 	cd tmp && mv pkg outpostserverpkg-$(VERSION)-content 
-	cd tmp && tar czvf ../outpostserverpkg-$(VERSION)-content.tgz \
+	cd tmp && tar czvf ../../outpostserverpkg-$(VERSION)-content.tgz \
 		outpostserverpkg-$(VERSION)-content
 
 
@@ -89,6 +108,6 @@ debpkg:
 clean:
 	rm -rf tmp *.tgz
 	cd services && $(MAKE) clean
-#	cd server && $(MAKE) clean
-#	cd content && $(MAKE) clean
+	cd server && $(MAKE) clean
+	cd content && $(MAKE) clean
 #	cd client && $(MAKE) clean

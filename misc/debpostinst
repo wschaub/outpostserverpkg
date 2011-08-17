@@ -1,0 +1,4 @@
+
+#!/bin/sh
+lighty-enable-mod fastcgi fastcgi-php
+service lighttpd force-reload
