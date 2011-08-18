@@ -6,8 +6,8 @@
 #build
 . ./vars
 #Needed to check the the OS we are running under
-. /etc/lsb-release
-
+DISTRIB_ID=`lsb_release -s -i`
+DISTRIB_CODENAME=`lsb_release -s -c`
 #Bomb out if we aren't root
 UID=`id -u`
 if [ $UID -ne 0 ]

@@ -4,6 +4,9 @@ export VERSION=0.5
 #Current working directory, used by the tarpkg target
 export CWD=`pwd`
 
+#LSB information for generating tar packages
+DISTRIB_ID=`lsb_release -s -i`
+DISTRIB_CODENAME=`lsb_release -s -c`
 #Directory prefix to put bundeled service programs
 export SERVICEPREFIX=/opt/outpostserver
 
@@ -64,7 +67,8 @@ tarpkg: clean
 	echo $(DEPENDS) >tmp/DEPS
 	echo "SERVICEPREFIX=$(SERVICEPREFIX)" >tmp/vars
 	echo "WWWROOT=$(WWWROOT)" >>tmp/vars
-	cat /etc/lsb-release | awk '{print "TARGET_"$$0}' >>tmp/vars
+	echo TARGET_DISTRIB_ID=$(DISTRIB_ID) >>tmp/vars
+	echo TARGET_DISTRIB_CODENAME=$(DISTRIB_CODENAME) >>tmp/vars
 	#Builld the -bin package for our current type
 	cp tmp/DEPS tmp/vars tmp/pkg
 	$(MAKE) DESTDIR=$(CWD)/tmp/fakeroot/
@@ -84,7 +88,8 @@ contenttarpkg: clean
 	cp misc/TARPKGREADME tmp/pkg/README
 	echo "SERVICEPREFIX=$(SERVICEPREFIX)" >tmp/vars
 	echo "WWWROOT=$(WWWROOT)" >>tmp/vars
-	cat /etc/lsb-release | awk '{print "TARGET_"$$0}' >>tmp/vars
+	echo TARGET_DISTRIB_ID=$(DISTRIB_ID) >>tmp/vars
+	echo TARGET_DISTRIB_CODENAME=$(DISTRIB_CODENAME) >>tmp/vars
 	cp tmp/vars tmp/pkg
 	touch tmp/pkg/CONTENT
 	fakeroot $(MAKE) DESTDIR=$(CWD)/tmp/fakeroot _tarpkgcontent
