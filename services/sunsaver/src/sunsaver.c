@@ -199,7 +199,7 @@ int write_log(FILE *fp)
 		//if ((array_fault & (1 << 6)) >> 6) printf("\tRTS shorted\n");
 		if ((array_fault & (1 << 6)) >> 6) fprintf(fp,"RTS shorted:");
 		//if ((array_fault & (1 << 7)) >> 7) printf("\tRTS was valid, now disconnected\n");
-		if ((array_fault & (1 << 7)) >> 7) fprintf(fp,"RTS was valid, now disconnected:");
+		if ((array_fault & (1 << 7)) >> 7) fprintf(fp,"RTS was valid now disconnected:");
 		//if ((array_fault & (1 << 8)) >> 8) printf("\tLocal temperature sensor failed\n");
 		if ((array_fault & (1 << 8)) >> 8) fprintf(fp,"Local temperature sensor failed:");
 		//if ((array_fault & (1 << 9)) >> 9) printf("\tFault 10\n");
@@ -532,7 +532,7 @@ int write_log(FILE *fp)
 		//if ((array_fault_daily & (1 << 6)) >> 6) printf("\tRTS shorted\n");
 		if ((array_fault_daily & (1 << 6)) >> 6) fprintf(fp,"RTS shorted:");
 		//if ((array_fault_daily & (1 << 7)) >> 7) printf("\tRTS was valid, now disconnected\n");
-		if ((array_fault_daily & (1 << 7)) >> 7) fprintf(fp,"RTS was valid, now disconnected:");
+		if ((array_fault_daily & (1 << 7)) >> 7) fprintf(fp,"RTS was valid now disconnected:");
 		//if ((array_fault_daily & (1 << 8)) >> 8) printf("\tLocal temperature sensor failed\n");
 		if ((array_fault_daily & (1 << 8)) >> 8) fprintf(fp,"Local temperature sensor failed:");
 		//if ((array_fault_daily & (1 << 9)) >> 9) printf("\tFault 10\n");
