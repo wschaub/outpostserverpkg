@@ -37,11 +37,8 @@ esac
 #DEBHELPER#
 
 
-HOSTNAME=`cat /etc/hostname`
-sed -i.old "s/##HOSTNAME##/$HOSTNAME/g" /etc/hosts
-
-HOSTNAME=main.tznet
-for i in /var/www/index.html /var/www/wiki/conf/local.php /var/www/wiki/data/pages/start.txt
+HOSTNAME=`cat /etc/hostname`.tznet
+for i in /var/www/wiki/conf/local.php /var/www/wiki/data/pages/start.txt
 do
 if [ -f $i ]
 then
@@ -50,10 +47,9 @@ then
 fi
 done
 
-lighty-enable-mod fastcgi fastcgi-php
-/etc/init.d/lighttpd restart
-/etc/init.d/dnsmasq restart
-/etc/init.d/samba restart
-touch /var/www/wiki/conf/local.php
+if [ -f /var/www/wiki/conf/local.php ]
+then
+    touch /var/www/wiki/conf/local.php
+fi
 
 exit 0
