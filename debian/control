@@ -1,0 +1,25 @@
+Source: outpostserverpkg
+Section: net
+Priority: optional
+Maintainer: William Schaub <william.schaub@genesi-usa.com>
+Build-Depends: debhelper (>= 7.0.50~)
+Standards-Version: 3.8.4
+#Homepage: <insert the upstream URL, if relevant>
+#Vcs-Git: git://git.debian.org/collab-maint/outpostserverpkg.git
+#Vcs-Browser: http://git.debian.org/?p=collab-maint/outpostserverpkg.git;a=summary
+
+Package: outpostserverpkg-basestation
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, dnsmasq, lighttpd, php5-cgi, php5-sqlite, samba, vim
+Replaces: dnsmasq
+Description: Solar Outpost server package for base station
+
+Package: outpostserverpkg-remote
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, dnsmasq, lighttpd, php5-cgi, php5-sqlite, samba, vim
+Replaces: dnsmasq
+Description: Solar Outpost server package for remote sites
+
+Package: outpostserverpkg-doc
+Architecture: all
+Description: Content and documentation for the Solar Outpost server package

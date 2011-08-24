@@ -1,4 +1,3 @@
-SERVICEPREFIX=/opt/outpostserver
 #Default make rule to build all commands
 all: powerbutton
 

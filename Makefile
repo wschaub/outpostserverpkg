@@ -109,7 +109,10 @@ _tarpkgcontent:
 	$(MAKE) contentinstall
 	cd tmp/fakeroot && tar cvf ../pkg/image.tar .
 
-debpkg:
+debpkg: clean
+	debian/rules clean
+	dpkg-buildpackage -us -uc
+
 clean:
 	rm -rf tmp *.tgz
 	cd services && $(MAKE) clean

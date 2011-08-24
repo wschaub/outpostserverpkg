@@ -5,11 +5,14 @@
    * re-oragnized everything so that all files only live in one place for better maintainability.
 
    * Improved the sunsaver and powerbutton services to be proper daemons with
-     command line options and manpages.
+     command line options 
 
    * Content is now seperate from the rest of the system and is optionally installed.
 
    * This version can now (optionally) be built as a set of debian packages.
+
+   * fixed fprintfs with extra commas in the sunsaver utility
+
 
 
 0.4 --
