@@ -4,6 +4,47 @@
 # see: dh_installdeb(1)
 
 set -e
+do_configure() {
+do_ucf
+lighty-enable-mod fastcgi fastcgi-php
+/etc/init.d/lighttpd restart || true
+/etc/init.d/dnsmasq restart || true
+/etc/init.d/samba restart || true
+}
+
+#We do almost everything as regular pkgname.conffiles
+#except for a few cases in this function which are handled by ucf
+#instead. 
+do_ucf(){
+
+cd /opt/outpostserver/templates
+#see if /etc/hosts already has the correct lines in it
+#if not do a replacement on our template and append those lines to it
+
+#disable shell exit on false returns for now
+set +e
+HOSTNAME=`cat /etc/hostname`
+cat hosts-remote | sed -e "s/##HOSTNAME##/$HOSTNAME/g" >tmp
+grep -F -f tmp hosts
+if [ $? -ne 0 ] 
+then
+    cat hosts-remote | sed -e "s/##HOSTNAME##/$HOSTNAME/g" >>/etc/hosts
+else
+        echo hosts already modified
+fi
+
+if [ ! -f /var/www/wiki/conf/local.php ]
+then
+    cat local.php | sed -e "s/##HOSTNAME##/$HOSTNAME/g" >/var/www/wiki/conf/local.php
+    chown www-data:www-data /var/www/wiki/conf/local.php
+fi
+
+	echo sed -i.old "s/##HOSTNAME##/$HOSTNAME/g" /var/www/index.html
+	sed -i.old "s/##HOSTNAME##/$HOSTNAME/g" /var/www/index.html
+#go back to exiting on a false return from a command.
+set -e
+
+}
 
 # summary of how this script can be called:
 #        * <postinst> `configure' <most-recently-configured-version>
@@ -20,7 +61,7 @@ set -e
 
 case "$1" in
     configure)
-    ;;
+    do_configure;;
 
     abort-upgrade|abort-remove|abort-deconfigure)
     ;;
@@ -36,21 +77,5 @@ esac
 
 #DEBHELPER#
 
-
-HOSTNAME=`cat /etc/hostname`.tznet
-for i in /etc/hosts /var/www/index.html /var/www/wiki/conf/local.php /var/www/wiki/data/pages/start.txt
-do
-if [ -f $i ]
-then
-	echo sed -i.old "s/##HOSTNAME##/$HOSTNAME/g" $i
-	sed -i.old "s/##HOSTNAME##/$HOSTNAME/g" $i
-fi
-done
-
-lighty-enable-mod fastcgi fastcgi-php
-/etc/init.d/lighttpd restart
-/etc/init.d/dnsmasq restart
-/etc/init.d/samba restart
-touch /var/www/wiki/conf/local.php
 
 exit 0

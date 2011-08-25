@@ -23,7 +23,11 @@ override_dh_fixperms:
 binary: binary-arch binary-indep
 binary-arch:
 	$(MAKE) install DESTDIR=`pwd`/debian/outpostserverpkg-basestation
+	mv `pwd`/debian/outpostserverpkg-basestation/var/www/wiki/conf/local.php `pwd`/debian/add-ons/templates/
+	rm `pwd`/debian/outpostserverpkg-basestation/etc/hosts
 	$(MAKE) TYPE=remote install DESTDIR=`pwd`/debian/outpostserverpkg-remote
+	mv `pwd`/debian/outpostserverpkg-remote/var/www/wiki/conf/local.php `pwd`/debian/add-ons/templates/
+	rm `pwd`/debian/outpostserverpkg-remote/etc/hosts
 
 binary-indep:
 	$(MAKE) contentinstall DESTDIR=`pwd`/debian/outpostserverpkg-doc

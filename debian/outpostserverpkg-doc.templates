@@ -1,0 +1,8 @@
+Template: outpostserverpkg-doc/overwrite
+Type: boolean
+Default: false
+Description: You already have content installed do you want to over write it?
+ You already have the initial outpost server documentation installed, do you want to
+ over-write it? WARNING: If you choose to over write you may loose some of the
+ content that you have added to your system. I fyou are unsure how to answer 
+ Just choose to not over write the content.

@@ -1,0 +1,36 @@
+#!/bin/sh -e
+
+. /usr/share/debconf/confmodule
+
+#ask the user if they want to over-write their content
+#and abort if false
+prompt(){
+db_fset outpostserverpkg-doc/overwrite seen false || true
+db_input high outpostserverpkg-doc/overwrite || true
+db_go
+db_get outpostserverpkg-doc/overwrite
+if [ "$RET" = "true" ]; then
+    exit 0
+else
+    exit 1
+fi
+}
+
+#check to see if there are other-doc packages installed or the 
+#wiki shows signs of use if so prompt for what to do.
+
+#check if we are being called with a version argument
+if [ -n "$2" ]
+then
+    prompt
+fi
+
+if [ -f /var/www/wiki/data/pages/start.txt ]
+then
+    prompt
+fi
+
+
+#DEBHELPER#
+#if we make it this far we are OK.
+exit 0

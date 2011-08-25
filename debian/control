@@ -12,14 +12,17 @@ Package: outpostserverpkg-basestation
 Architecture: any
 Depends: ${shlibs:Depends}, ${misc:Depends}, dnsmasq, lighttpd, php5-cgi, php5-sqlite, samba, vim
 Replaces: dnsmasq
+Conflicts: outpostserverpkg-remote
 Description: Solar Outpost server package for base station
 
 Package: outpostserverpkg-remote
 Architecture: any
 Depends: ${shlibs:Depends}, ${misc:Depends}, dnsmasq, lighttpd, php5-cgi, php5-sqlite, samba, vim
 Replaces: dnsmasq
+Conflicts: outpostserverpkg-basestation
 Description: Solar Outpost server package for remote sites
 
 Package: outpostserverpkg-doc
 Architecture: all
+Depends: outpostserverpkg-basestation | outpostserverpkg-remote
 Description: Content and documentation for the Solar Outpost server package

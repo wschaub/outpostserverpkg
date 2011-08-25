@@ -1,0 +1,16 @@
+/root/.ssh/id_rsa.pub
+/root/.ssh/id_rsa
+/root/.ssh/authorized_keys
+/var/www/wiki/conf/entities.conf
+/var/www/wiki/conf/mysql.conf.php.example
+/var/www/wiki/conf/smileys.conf
+/var/www/wiki/conf/license.php
+/var/www/wiki/conf/wordblock.conf
+/var/www/wiki/conf/mime.conf
+/var/www/wiki/conf/users.auth.php
+/var/www/wiki/conf/scheme.conf
+/var/www/wiki/conf/acronyms.conf
+/var/www/wiki/conf/mediameta.php
+/var/www/wiki/conf/interwiki.conf
+/var/www/wiki/conf/acl.auth.php
+/var/www/wiki/conf/dokuwiki.php
