@@ -26,3 +26,9 @@ Package: outpostserverpkg-doc
 Architecture: all
 Depends: outpostserverpkg-basestation | outpostserverpkg-remote
 Description: Content and documentation for the Solar Outpost server package
+
+Package: outpostserverpkg-client
+Architecture: all
+Depends: samba-common
+Conflicts: outpostserverpkg-basestation, outpostserverpkg-remote
+Description: samba config file for client linux machines to mount the drives
