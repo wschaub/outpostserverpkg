@@ -1,4 +1,4 @@
-Template: outpostserverpkg-doc/overwrite
+Template: outpostserver-doc/overwrite
 Type: boolean
 Default: false
 Description: You already have content installed do you want to over write it?

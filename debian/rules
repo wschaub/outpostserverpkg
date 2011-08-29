@@ -12,24 +12,34 @@
 
 # Uncomment this to turn on verbose mode.
 export DH_VERBOSE=1
-
+#export DH_NO_ACT=1
 # This has to be exported to make some magic below work.
 export DH_OPTIONS
-
 override_dh_prep:
+override_dh_auto_install:
+#This is fairly silly but since we include our own libs in /opt
+#we need this for the shlibdeps to work. currently both
+#basestation and remote install the same contents in /opt so this should
+#be safe.
+override_dh_shlibdeps:
+	dh_shlibdeps -l`pwd`/debian/outpostserver-basestation/opt/outpostserver/lib
 override_dh_fixperms:
 	dh_fixperms -Xvar/www
-	
+#no need for a build target all the real work happens in the binary-indep and binary-arch targets.
+override_dh_auto_build:
+build:
 binary: binary-arch binary-indep
 binary-arch:
-	$(MAKE) install DESTDIR=`pwd`/debian/outpostserverpkg-basestation
-	mv `pwd`/debian/outpostserverpkg-basestation/var/www/wiki/conf/local.php `pwd`/debian/add-ons/templates/
-	rm `pwd`/debian/outpostserverpkg-basestation/etc/hosts
-	$(MAKE) TYPE=remote install DESTDIR=`pwd`/debian/outpostserverpkg-remote
-	mv `pwd`/debian/outpostserverpkg-remote/var/www/wiki/conf/local.php `pwd`/debian/add-ons/templates/
-	rm `pwd`/debian/outpostserverpkg-remote/etc/hosts
+	$(MAKE) install DESTDIR=`pwd`/debian/outpostserver-basestation
+	mv `pwd`/debian/outpostserver-basestation/var/www/wiki/conf/local.php `pwd`/debian/add-ons/templates/
+	rm `pwd`/debian/outpostserver-basestation/etc/hosts
+	$(MAKE) TYPE=remote install DESTDIR=`pwd`/debian/outpostserver-remote
+	mv `pwd`/debian/outpostserver-remote/var/www/wiki/conf/local.php `pwd`/debian/add-ons/templates/
+	rm `pwd`/debian/outpostserver-remote/etc/hosts
+	dh binary-arch
 
 binary-indep:
-	$(MAKE) contentinstall DESTDIR=`pwd`/debian/outpostserverpkg-doc
+	$(MAKE) contentinstall DESTDIR=`pwd`/debian/outpostserver-doc
+	dh binary-indep
 %:
 	dh $@ 

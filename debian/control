@@ -1,4 +1,4 @@
-Source: outpostserverpkg
+Source: outpostserver
 Section: net
 Priority: optional
 Maintainer: William Schaub <william.schaub@genesi-usa.com>
@@ -8,27 +8,27 @@ Standards-Version: 3.8.4
 #Vcs-Git: git://git.debian.org/collab-maint/outpostserverpkg.git
 #Vcs-Browser: http://git.debian.org/?p=collab-maint/outpostserverpkg.git;a=summary
 
-Package: outpostserverpkg-basestation
+Package: outpostserver-basestation
 Architecture: any
 Depends: ${shlibs:Depends}, ${misc:Depends}, dnsmasq, lighttpd, php5-cgi, php5-sqlite, samba, vim
 Replaces: dnsmasq
-Conflicts: outpostserverpkg-remote
+Conflicts: outpostserver-remote
 Description: Solar Outpost server package for base station
 
-Package: outpostserverpkg-remote
+Package: outpostserver-remote
 Architecture: any
 Depends: ${shlibs:Depends}, ${misc:Depends}, dnsmasq, lighttpd, php5-cgi, php5-sqlite, samba, vim
 Replaces: dnsmasq
 Conflicts: outpostserverpkg-basestation
 Description: Solar Outpost server package for remote sites
 
-Package: outpostserverpkg-doc
+Package: outpostserver-doc
 Architecture: all
-Depends: outpostserverpkg-basestation | outpostserverpkg-remote
+Depends: outpostserver-basestation | outpostserver-remote
 Description: Content and documentation for the Solar Outpost server package
 
-Package: outpostserverpkg-client
+Package: outpostserver-client
 Architecture: all
 Depends: samba-common
-Conflicts: outpostserverpkg-basestation, outpostserverpkg-remote
+Conflicts: outpostserver-basestation, outpostserver-remote
 Description: samba config file for client linux machines to mount the drives

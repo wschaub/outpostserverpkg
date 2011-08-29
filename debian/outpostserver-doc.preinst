@@ -5,10 +5,10 @@
 #ask the user if they want to over-write their content
 #and abort if false
 prompt(){
-db_fset outpostserverpkg-doc/overwrite seen false || true
-db_input high outpostserverpkg-doc/overwrite || true
+db_fset outpostserver-doc/overwrite seen false || true
+db_input high outpostserver-doc/overwrite || true
 db_go
-db_get outpostserverpkg-doc/overwrite
+db_get outpostserver-doc/overwrite
 if [ "$RET" = "true" ]; then
     exit 0
 else
