@@ -386,7 +386,7 @@ int write_log(FILE *fp)
 		fprintf(fp,"Switch 3 ON - Auto-Equalize On,");
 	} else {
 		//printf("\tSwitch 3 OFF - Auto-Equalize Off\n");
-		printf("Switch 3 OFF - Auto-Equalize Off,");
+		fprintf(fp,"Switch 3 OFF - Auto-Equalize Off,");
 	}
 	if ((dip_switch & (1 << 3)) >> 3) {
 		//printf("\tSwitch 4 ON - MODBUS Protocol\n");
