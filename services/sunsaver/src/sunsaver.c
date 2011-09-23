@@ -37,11 +37,30 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 int main(int argc, char **argv)
 {
     FILE *fp;
-    if(argc < 2 ) {
-        fprintf(stderr,"you must specify a path to write to\n");
-        exit(1);
-    }
+    int opt;
+    int foreground = 0; 
 
+    while ((opt = getopt(argc,argv,"f")) != -1) {
+        switch(opt) {
+            case 'f':
+                foreground = 1;
+                break;
+            default:
+                fprintf(stderr, "Usage: %s [ -f ] /path/to/logfile.csv\n",
+                        argv[0]);
+                exit(EXIT_FAILURE);
+        }
+    }
+        if(optind >= argc) {
+            fprintf(stderr,"Usage: %s [ -f ] /path/to/logfile.csv\n",
+                    argv[0]);
+            exit(EXIT_FAILURE);
+        }
+
+    if(!foreground){
+        printf("forking into background\n");
+        daemon(0,0);
+    }
 
      while(1){
         fp = fopen(argv[1],"a");
