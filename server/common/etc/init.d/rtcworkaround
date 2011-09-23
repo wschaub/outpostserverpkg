@@ -1,0 +1,39 @@
+#!/bin/sh
+#This is a script to get around the dead RTC battery problem in tanzania
+#it really sucks but its better than nothing, particularly when there is no
+#network connection to set the time with.
+year=`date +%Y`
+lasttime=/var/local/lasttime
+#Check first to see if we are in the 21st century, if so save the current time
+#by touching a reference file.
+save_time(){
+	if [ $year -lt 2000 ]
+	then
+		exit 0;
+	fi
+	touch $lasttime
+}
+
+#First run ntpdate, if that fails then we check to see if the year is sane
+#if that fails we restore the date to the timestamp of the lasttime file.
+restore_time(){
+	ntpdate tick.usno.navy.mil
+	if [  $? -ne 0 ]
+	then
+		if [ $year -lt 2000 ]
+		then
+			date -s "`date -r $lasttime `"
+		fi
+	fi
+exit 0
+} 
+	case $1 in
+		start)
+			restore_time
+		;;
+		stop)
+			save_time
+		;;
+	esac
+
+
