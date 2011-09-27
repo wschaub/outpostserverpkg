@@ -1,28 +1,34 @@
-#NEW instructions
- * clone the git tree or unpack the source tarball.
- * run ./build.sh to interactively go through the build/install process or
- use one of the following options to build.sh:
- firstinstall -- First time install this installs everything including the initial content
- install -- Installs everything except the initial content.
- docinstall -- installs only the initial content.
- tarpkg -- creates a gzipped tar archive containing everything + a standalone install script.
- debpkg -- runs dpkg-buildpackage to build a set of debain packages. 
+This is a collection of open source software, config files, content and 
+packaging intended for use with the Solar Outpost project in tanzania.
+
+How to build:
+Right now the best way to do a build is on debian or ubuntu
+with dpkg-buildpackage -us -uc 
+
+###For Debian/Ubuntu ###
+install build-essential, devscripts, debhelper
+dpkg-buildpackage -us -uc
+
+You will get several packages:
+ * outpostserver-basestation -- everything that needs to be on the serverat the base station. 
+
+ * outpostserver-remote -- everything that needs to be on the server at a remote site.
+
+ * outpostserver-client -- anything that needs to be modified on the client goes here.
+
+ * outpostserver-content -- Initial content package with a collection of wiki pages and various documentation/tools for the solar system. 
+
+###For Everything else ###
+on other distros you will need to install samba, php5, lighttpd etc and
+then use make/make install and make sure you have WWWROOT, WWW_USER, WWW_GROUP set correctly. by default make will build things for a base station make TYPE=remote for a remote site.
+
+Make insall will actually install everything onto the host system
+be aware that it will overwrite certain config files mainly smb.conf, hosts, resolv.conf, php.ini for cgi etc. 
+
+make contentinstall will install various wiki and static content under /var/www
+
+to make things a bit more friendly you can do a make tarpkg (with the correct type and other variables set) to make a tar file that you can extract and run an included script which should allow you to easily install/uninstall it on another machine. (The tarpkg method is probably not what you want to do but it is there none the less incase you might find it useful) 
+
+All of this is untested outside of Debian/Ubuntu at the moment. The only supported way to install is through debian packages. 
 
 
-#OLD instructions
-To set up the .tznet smarttop servers perform the following steps:
- * install maverick (either headless or full, it doesn't really matter)
- * set up /etc/network/interfaces to give eth0 a static address (192.168.93.2 gw 192.168.93.1 for main and 192.168.23.2 gw 192.168.23.1 for a remote site)
- * type aptitude update
- * type aptitude install dnsmasq lighttpd php5-cgi php5-sqlite samba vim
- * type lighty-enable-mod fastcgi fastcgi-php
- * type service lighttpd force-reload
- * type chown www-data:www-data /var/www
-
-Now we are ready to extract the overlay tarball:
-  * if the machine you are installing is the base station site use sys1-overlay.tgz if it is the solar outpost use sys2-overlay.tgz
-  * if this is the base station site run "gunzip -c sys1-overlay.tgz | ( cd /; tar xvpf -)" otherwise use sys2-overlay.tgz instead.
-
-Fix the clients:
-included in this tarball is an smb.conf file copy it to /etc/samba on all the Smart top and Smart Book computers that will be 
-using the fileserver if you dont they will be unable to browse the windows shares. (This is only needed on Ubuntu Maverick, This seems to be fixed already in natty)
