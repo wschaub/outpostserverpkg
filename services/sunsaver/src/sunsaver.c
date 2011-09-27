@@ -114,6 +114,13 @@ int write_log(FILE *fp)
 	modbus_close(&mb_param);
     
     timestamp = time(NULL);
+
+    /* if time is < Jan 1st 2000 don't log because the RTC is messed up */
+    if(timestamp < 946702800 ) {
+        fprintf(stderr,"ERROR time is not even in the 21st century refusing to log\n");
+        return(1);
+    }
+
     fprintf(fp,"%lu,",timestamp);//write timestamp field.
     fprintf(stderr,"%lu\n",timestamp);
 	
