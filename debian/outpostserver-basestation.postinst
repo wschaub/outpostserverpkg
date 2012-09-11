@@ -6,7 +6,7 @@
 set -e
 do_configure() {
 do_ucf
-lighty-enable-mod fastcgi fastcgi-php
+lighty-enable-mod fastcgi fastcgi-php || true
 /etc/init.d/lighttpd restart || true
 /etc/init.d/dnsmasq restart || true
 /etc/init.d/samba restart || true
