@@ -1,7 +1,0 @@
-#!/bin/sh
-#for some reason upstart sometimes does not start the nmbd service.
-#this breaks network neighborhood browsing so I'm just putting a script here
-# to force the start of the nmbd service instead.
-case $1 in 
-start) service nmbd start;;
-esac

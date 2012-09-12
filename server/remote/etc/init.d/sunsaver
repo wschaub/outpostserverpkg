@@ -1,0 +1,16 @@
+#!/bin/sh
+### BEGIN INIT INFO
+# Provides:          sunsaver
+# Required-Start:    mountdevsubfs
+# Required-Stop:     
+# Default-Start:     2 3 4 5 S
+# Default-Stop:      0 1 6
+# Short-Description: sunsaver daemon
+# Description:       Collect data from the SunSaver MPPT charge controller
+### END INIT INFO
+#Start the sunsaver logger
+case $1 in
+start) /opt/outpostserver/bin/sunsaver /var/log/sunsaver.csv 
+;;
+*) ;;
+esac

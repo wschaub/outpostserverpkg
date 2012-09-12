@@ -1,4 +1,14 @@
 #!/bin/sh
+### BEGIN INIT INFO
+# Provides:          rtcworkaround
+# Required-Start:    mountdevsubfs
+# X-Start-Before:    hostname keymap keyboard-setup procps pcmcia hwclock hwclockfirst hdparm hibernate-cleanup lvm2
+# Required-Stop:     
+# Default-Start:     2 3 4 5 S
+# Default-Stop:      0 1 6
+# Short-Description: cope with dead RTC battery
+# Description:       try to cope as best we can with a dead RTC battery
+### END INIT INFO
 #This is a script to get around the dead RTC battery problem in tanzania
 #it really sucks but its better than nothing, particularly when there is no
 #network connection to set the time with.
