@@ -1,6 +1,8 @@
 outpostserver (0.5-2) maverick; urgency=low
 
   * fixed post install scripts to not bomb out when configuring lighttpd
+  * switched to using LSB init scripts
+  * fixed packaging of sunsaver.
 
  -- William Schaub <wschaub@genesi-tech.com>  Tue, 11 Sep 2012 16:40:32 -0400
 
