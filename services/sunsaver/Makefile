@@ -12,7 +12,7 @@ libmodbus-2.0.4:
 	tar xzvf libmodbus-2.0.4.tar.gz
 
 modbus: libmodbus-2.0.4
-	cd libmodbus-2.0.4 && ./configure --prefix $(DESTDIR)$(SERVICEPREFIX) && $(MAKE) 
+	cd libmodbus-2.0.4 && ./configure --prefix $(SERVICEPREFIX) && $(MAKE) 
 	touch modbus
 
 sunsaver: src/sunsaver.c modbus
@@ -25,7 +25,7 @@ sunsaverlog: src/sunsaverlog.c modbus
 	$(CC) $(_CFLAGS) -o sunsaverlog src/sunsaverlog.c $(_LDFLAGS)
 	
 install: sunsaver sunsaverEEPROM sunsaverlog
-	cd libmodbus-2.0.4 && $(MAKE) install
+	cd libmodbus-2.0.4 && $(MAKE) install DESTDIR=$(DESTDIR)
 	install -D sunsaver $(DESTDIR)$(SERVICEPREFIX)/bin/sunsaver
 	install -D sunsaverEEPROM $(DESTDIR)$(SERVICEPREFIX)/bin/sunsaverEEPROM
 	install -D sunsaverlog $(DESTDIR)$(SERVICEPREFIX)/bin/sunsaverlog
